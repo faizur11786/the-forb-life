@@ -1,0 +1,67 @@
+.post {
+  &--header {
+    padding: 0.75rem 1rem;
+    .user {
+      display: flex;
+      gap: 0.65rem;
+      align-items: center;
+      &--avatar {
+        min-width: 30px;
+        min-height: 30px;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
+      color: lighten($gray, 45);
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        svg {
+          width: 16px;
+          fill: lighten($gray, 45);
+        }
+      }
+    }
+  }
+  &--media {
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+    &--group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      &--item {
+        width: 49.5%;
+        max-height: 300px;
+        flex: auto;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    &--item {
+      width: 100%;
+    //   min-height: 500px;
+      max-height: 600px;
+      flex: auto;
+      overflow: hidden;
+      img {
+        width: 100%;
+        // position: relative;
+        // // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

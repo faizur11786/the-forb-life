@@ -1,0 +1,40 @@
+@mixin scrollbar {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($red, 1);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: lighten($dark-gray, 5);
+    }
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-gray;
+  }
+  &::-webkit-scrollbar {
+    width: 12px;
+    transition: all 0.5s ease-in-out;
+    background-color: $dark-gray;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba($red, 0);
+  }
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin hoverEffect($color: $gray) {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: lighten($color, 5);
+    svg {
+      fill: $white;
+    }
+  }
+}

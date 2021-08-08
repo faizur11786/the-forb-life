@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 4rem;
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .option {
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: $gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .user--avatar{
+      border-radius: 10px;
+    }
+  }
+  .chat {
+    &--icon {
+      svg {
+        fill: $red;
+      }
+    }
+  }
+}

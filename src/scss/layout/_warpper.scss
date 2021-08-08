@@ -1,0 +1,33 @@
+.page {
+  height: 100vh;
+  background-color: $dark-gray;
+}
+.container {
+  gap: 2rem;
+  max-width: 1464px;
+  @media (max-width: 1920px) {
+    max-width: none;
+  }
+  @media (max-width: 1464px) {
+    gap: 1.5rem;
+  }
+}
+.warpper {
+  background-color: $dark-gray;
+  position: relative;
+  height: calc(100vh - 78px);
+  overflow: auto;
+  .body {
+    position: relative;
+    height: calc(100vh - 78px);
+    overflow: auto;
+    @include scrollbar;
+    @media (max-width: 1400px) {
+      padding-right: 0.25rem;
+      padding-left: 0.9rem;
+    }
+  }
+  &.container {
+    padding: 0;
+  }
+}

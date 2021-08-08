@@ -1,0 +1,26 @@
+.form-control {
+  border: 1px solid transparent;
+  background-color: $gray;
+  color: lighten($gray, 55);
+  &:focus {
+    color: lighten($gray, 55);
+    box-shadow: none !important;
+    border-color: transparent;
+    background-color: darken($gray, 0.5);
+  }
+}
+.input {
+  &-group {
+    padding: 0.25rem 0.5rem;
+    background-color: $gray;
+    border-radius: 10px;
+    &-text {
+      background-color: $gray;
+      border: 1px solid transparent;
+      cursor: pointer;
+      svg {
+        fill: $red;
+      }
+    }
+  }
+}

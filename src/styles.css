@@ -1,0 +1,311 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+  padding: 1rem;
+}
+
+.header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.header .option {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-color: #343232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .chat--icon svg {
+  fill: #da3732;
+}
+
+.header .user--avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .user--avatar--img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #343232;
+  border-radius: 10px;
+  margin: 2rem;
+  margin-right: 0;
+}
+
+.sidebar--right {
+  max-width: 340px;
+  min-width: 200px;
+  position: relative;
+}
+
+.sidebar--right .content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.menu {
+  padding: 0.5rem 0.75rem;
+}
+
+.menu--item {
+  margin-bottom: 0.25rem;
+}
+
+.menu--icon svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  fill: #b8b8b8;
+}
+
+.menu--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0.75rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #b8b8b8;
+}
+
+.menu--link:hover {
+  background-color: #4e4b4b;
+}
+
+.menu--link:hover .menu--icon svg {
+  fill: #fff;
+}
+
+.menu--link--active {
+  background-color: #4e4b4b;
+  color: #fff;
+}
+
+.menu--link--active .menu--icon svg {
+  fill: #fff;
+}
+
+.page {
+  height: 100vh;
+  background-color: #1f1e1e;
+}
+
+.warpper {
+  background-color: #1f1e1e;
+  position: relative;
+}
+
+.warpper .body {
+  height: calc(100vh - 86px);
+  position: relative;
+  overflow: auto;
+  margin-top: 86px;
+}
+
+.warpper .body:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 85, 85, 0.822);
+}
+
+.warpper .body:hover::-webkit-scrollbar-track {
+  background-color: #2c2b2b;
+}
+
+.warpper .body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #1f1e1e;
+}
+
+.warpper .body::-webkit-scrollbar {
+  width: 12px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #1f1e1e;
+}
+
+.warpper .body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(85, 85, 85, 0);
+}
+
+.warpper .body .container {
+  gap: 2rem;
+  max-width: 1440px;
+}
+
+.brand {
+  padding: 1.25rem 1.5rem;
+}
+
+.brand--link {
+  display: block;
+}
+
+.form-control {
+  border: 1px solid transparent;
+  background-color: #343232;
+  color: #b8b8b8;
+}
+
+.form-control:focus {
+  color: #b8b8b8;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-color: transparent;
+  background-color: #333131;
+}
+
+.input-group {
+  padding: 0.5rem;
+  background-color: #343232;
+  border-radius: 10px;
+}
+
+.input-group-text {
+  background-color: #343232;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.input-group-text svg {
+  fill: #b8b8b8;
+}
+
+form.search {
+  max-width: 400px;
+}
+
+.feed {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.feed--container {
+  width: 100%;
+  height: calc(100vh - 86px);
+  padding: 2rem 0;
+  overflow: auto;
+}
+
+.feed--container:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 85, 85, 0.822);
+}
+
+.feed--container:hover::-webkit-scrollbar-track {
+  background-color: #2c2b2b;
+}
+
+.feed--container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #1f1e1e;
+}
+
+.feed--container::-webkit-scrollbar {
+  width: 12px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #1f1e1e;
+}
+
+.feed--container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(85, 85, 85, 0);
+}
+
+.feed--item {
+  width: 100%;
+  height: 300px;
+  background-color: #343232;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

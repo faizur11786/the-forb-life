@@ -1,0 +1,68 @@
+.sidebar {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0 0.75rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+  @media (max-width: 1464px) {
+    max-width: none;
+    width: fit-content;
+    min-width: 240px;
+  }
+  &--right {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: calc(100vh - 78px);
+    overflow: auto;
+    @include scrollbar;
+    .content {
+      width: 100%;
+    }
+    @media (max-width: 1464px) {
+      max-width: none;
+      width: fit-content;
+      min-width: 240px;
+    }
+  }
+}
+
+.menu {
+  // padding: 0.5rem 0.75rem;
+  &--item {
+    margin-bottom: 0.25rem;
+  }
+  &--icon {
+    svg {
+      transition: all 0.3s ease-in-out;
+      fill: lighten($gray, 45);
+    }
+  }
+  &--link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: lighten($gray, 45);
+    @include hoverEffect;
+    &--active {
+      background-color: $red;
+      color: $white;
+      .menu--icon {
+        svg {
+          fill: $white;
+        }
+      }
+      .menu--label {
+        color: $white;
+      }
+      @include hoverEffect($red);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.list {
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+    > div {
+      &:last-child {
+        .icon {
+          width: 30px;
+          height: 30px;
+          border-radius: 10px;
+          cursor: pointer;
+          @include center;
+          @include hoverEffect;
+          svg {
+            width: 20px;
+            fill: $red;
+          }
+          &:hover {
+            svg {
+              fill: lighten($red, 10);
+            }
+          }
+        }
+      }
+    }
+    h5 {
+      svg {
+        width: 20px;
+        fill: lighten($gray, 10);
+        margin-top: -4px;
+      }
+    }
+  }
+  &--body {
+  }
+  &--group {
+    padding: 1rem 0;
+  }
+  &--item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 0.25rem;
+    @include hoverEffect;
+    .user--avatar {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+  &--details {
+    line-height: 20px;
+    h5,
+    a {
+      display: block;
+      font-weight: 500;
+      color: $white;
+      font-size: 16px;
+      width: fit-content;
+      &:hover {
+        color: lighten($red, 10);
+      }
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+}

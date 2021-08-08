@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "vendors/index.scss",
+        "vendors/_bootstrap.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

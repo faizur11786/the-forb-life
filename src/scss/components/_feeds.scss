@@ -1,0 +1,19 @@
+.feed {
+  max-width: 744px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  gap: 2rem;
+  &--container {
+    width: 100%;
+    height: calc(100vh - 86px);
+    @include scrollbar;
+  }
+  &--item {
+    width: 100%;
+    background-color: $gray;
+    border-radius: 10px;
+  }
+}
