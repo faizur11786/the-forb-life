@@ -3,27 +3,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 0.75rem;
-    > div {
-      &:last-child {
-        .icon {
-          width: 30px;
-          height: 30px;
-          border-radius: 10px;
-          cursor: pointer;
-          @include center;
-          @include hoverEffect;
-          svg {
-            width: 20px;
-            fill: $red;
-          }
-          &:hover {
-            svg {
-              fill: lighten($red, 10);
-            }
-          }
-        }
-      }
-    }
     h5 {
       svg {
         width: 20px;
@@ -34,17 +13,30 @@
   }
   &--body {
   }
+  &--icon {
+    width: 40px;
+    height: 40px;
+    @include center;
+    background-color: $red;
+    border-radius: 50%;
+    svg {
+      width: 20px;
+      fill: $white;
+    }
+  }
   &--group {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid $gray;
   }
   &--item {
     display: flex;
     gap: 0.75rem;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.42rem 0.5rem;
     border-radius: 10px;
     cursor: pointer;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
     @include hoverEffect;
     .user--avatar {
       max-width: 40px;
@@ -61,7 +53,7 @@
       font-size: 16px;
       width: fit-content;
       &:hover {
-        color: lighten($red, 10);
+        color: $red;
       }
     }
     span {
