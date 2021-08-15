@@ -30,7 +30,7 @@
     .caption {
       padding: 0.5rem 1rem;
       margin-bottom: 0.25rem;
-      font-size: 15px;
+      font-size: 16px;
       &--text {
         color: $white;
         p {
@@ -69,6 +69,18 @@
         flex: auto;
         overflow: hidden;
         position: relative;
+        @media (max-width: 1220px) {
+          max-height: 255px;
+        }
+        @media (max-width: 900px) {
+          max-height: 300px;
+        }
+        @media (max-width: 630px) {
+          max-height: 225px;
+        }
+        @media (max-width: 480px) {
+          max-height: 155px;
+        }
         img {
           width: 100%;
           position: relative;
@@ -80,16 +92,24 @@
     }
     &--item {
       width: 100%;
-      //   min-height: 500px;
       max-height: 600px;
+      height: 600px;
       flex: auto;
       overflow: hidden;
+      @media (max-width: 625px) {
+        max-height: 400px;
+        height: 400px;
+      }
+      @media (max-width: 480px) {
+        max-height: 300px;
+        height: 300px;
+      }
       img {
         width: 100%;
-        // position: relative;
-        // // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }
@@ -99,7 +119,9 @@
   .reaction {
     display: flex;
     gap: 1rem;
-
+    @media (max-width: 425px) {
+      gap: 0.5rem;
+    }
     &--item {
       width: 100%;
       a {
@@ -107,7 +129,7 @@
         font-weight: 600;
         border-radius: 6px;
         padding: 0.35rem 0.75rem;
-        font-size: 15px;
+        font-size: 16px;
         gap: 0.5rem;
         @include center;
         &:hover {
@@ -116,6 +138,14 @@
         svg {
           width: 20px;
           fill: lighten($gray, 30);
+        }
+      }
+      &.active {
+        span {
+          color: $red;
+        }
+        svg {
+          fill: $red;
         }
       }
     }
@@ -132,7 +162,7 @@
     }
     .comment {
       flex: 1 1 auto;
-      border-radius: 10px;
+      border-radius: 8px;
       overflow: hidden;
       border: 1px solid lighten($gray, 15);
       display: flex;
@@ -183,10 +213,10 @@
         padding: 0.3rem 0.75rem;
         border-radius: 10px;
         color: $white;
-        font-size: 15px;
+        font-size: 16px;
         position: relative;
         a {
-          font-weight: 500;
+          font-weight: 600;
           &:hover {
             color: $red;
             text-decoration: underline;
@@ -199,15 +229,31 @@
         }
         span {
           position: absolute;
-          bottom: -1.1rem;
-          font-size: 13px;
-          margin-top: 0.25rem;
+          bottom: -1.25rem;
+          font-size: 14px;
+          margin-top: 0.3rem;
         }
+      }
+    }
+    .load--more {
+      background-color: transparent;
+      color: $white;
+      border: none;
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      top: 0.35rem;
+      &:hover {
+        text-decoration: underline;
+        color: $red;
       }
     }
   }
   &--create {
     padding: 1rem;
+    @media (max-width: 425px) {
+      padding: 0.75rem;
+    }
     .add--post {
       display: flex;
       margin-bottom: 1rem;
@@ -217,6 +263,18 @@
       input {
         width: 100%;
       }
+      textarea {
+        border: 1px solid lighten($gray, 5);
+        resize: none;
+        height: 70px;
+        border-radius: 10px;
+        &:focus {
+          background: lighten($gray, 2);
+        }
+      }
+    }
+    .drawer {
+      overflow: auto;
     }
     .reaction {
       a {

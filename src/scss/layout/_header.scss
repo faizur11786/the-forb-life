@@ -2,16 +2,69 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
-  z-index: 999;
-  padding: 0.5rem 1.25rem;
+  padding: 0.5rem 0rem;
   padding-bottom: 1rem;
+  gap: 1.5rem;
+  @media (max-width: 425px) {
+    gap: 1rem !important;
+  }
   > div {
     display: flex;
     align-items: center;
     gap: 2rem;
+    max-width: 360px;
+    width: 100%;
+    padding: 0rem 0.75rem;
+    @media (max-width: 1464px) {
+      max-width: none;
+      width: fit-content;
+      min-width: 240px;
+      max-width: 300px;
+      @media (max-width: 630px) {
+        min-width: unset !important;
+      }
+    }
+    &:nth-child(1) {
+      width: 100% !important;
+      @media (max-width: 1464px) {
+        width: 100% !important;
+      }
+      @media (max-width: 675px) {
+        min-width: unset !important;
+      }
+    }
+    &:nth-child(2) {
+      @media (max-width: 1099px) {
+        padding: 0;
+      }
+    }
+    &:nth-child(3) {
+      @media (max-width: 1099px) {
+        max-width: none !important;
+        min-width: unset !important;
+        gap: 1.5rem;
+        padding-left: 0;
+        @media (max-width: 425px) {
+          gap: 1rem !important;
+        }
+      }
+    }
   }
+  .search--box {
+    max-width: none;
+    @media (max-width: 1464px) {
+      width: 100%;
+    }
+    .search {
+      max-width: 744px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .right {
+    justify-content: flex-end;
+  }
+
   .option {
     min-width: 44px;
     min-height: 44px;
