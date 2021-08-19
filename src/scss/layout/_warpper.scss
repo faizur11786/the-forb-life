@@ -17,6 +17,9 @@
   position: relative;
   height: calc(100vh - 90px);
   overflow: auto;
+  @media (max-width: 899px) {
+    height: calc(100vh - 86px);
+  }
   .body {
     position: relative;
     height: calc(100vh - 90px);
@@ -25,6 +28,9 @@
     @media (max-width: 1400px) {
       padding-right: 0.25rem;
       padding-left: 0.9rem;
+    }
+    @media (max-width: 899px) {
+      height: calc(100vh - 86px);
     }
   }
   &.container {

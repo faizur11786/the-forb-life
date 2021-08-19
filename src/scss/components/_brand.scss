@@ -2,14 +2,11 @@
   &--link {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    span {
-      font-weight: bold;
-      color: #da3732;
-      font-size: 1.5rem;
-      background-image: linear-gradient(to right, $red, darken($red, 20));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    @media (max-width: 899px) {
+      padding-top: 0.5rem;
+      img {
+        width: 65px;
+      }
     }
   }
 }

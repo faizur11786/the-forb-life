@@ -4,11 +4,13 @@
   border-radius: 10px;
   margin: 0;
   padding: 0 0.75rem;
-  margin-bottom: 1.5rem;
+  // margin-bottom: 1.5rem;
   transition: all 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: calc(100vh - 90px);
+  overflow: auto;
   @media (max-width: 1464px) {
     max-width: none;
     width: fit-content;
@@ -28,11 +30,6 @@
     @include scrollbar;
     .content {
       width: 100%;
-    }
-    @media (max-width: 1464px) {
-      max-width: none;
-      width: fit-content;
-      min-width: 240px;
     }
     @media (max-width: 899px) {
       display: none;

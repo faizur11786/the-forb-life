@@ -8,50 +8,15 @@
   @media (max-width: 425px) {
     gap: 1rem !important;
   }
-  > div {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    max-width: 360px;
-    width: 100%;
-    padding: 0rem 0.75rem;
-    @media (max-width: 1464px) {
-      max-width: none;
-      width: fit-content;
-      min-width: 240px;
-      max-width: 300px;
-      @media (max-width: 630px) {
-        min-width: unset !important;
-      }
-    }
-    &:nth-child(1) {
-      width: 100% !important;
-      @media (max-width: 1464px) {
-        width: 100% !important;
-      }
-      @media (max-width: 675px) {
-        min-width: unset !important;
-      }
-    }
-    &:nth-child(2) {
-      @media (max-width: 1099px) {
-        padding: 0;
-      }
-    }
-    &:nth-child(3) {
-      @media (max-width: 1099px) {
-        max-width: none !important;
-        min-width: unset !important;
-        gap: 1.5rem;
-        padding-left: 0;
-        @media (max-width: 425px) {
-          gap: 1rem !important;
-        }
-      }
-    }
+  @media (max-width: 1360px) {
+    gap: 1rem !important;
+  }
+  @media (max-width: 899px) {
+    padding-top: 0.5rem;
   }
   .search--box {
     max-width: none;
+    flex: 1 1 auto;
     @media (max-width: 1464px) {
       width: 100%;
     }
@@ -61,14 +26,44 @@
       margin: 0 auto;
     }
   }
+  .left {
+    display: flex;
+    padding: 0rem 0.75rem;
+    justify-content: flex-start;
+    max-width: 360px;
+    width: 100%;
+    @media (max-width: 1464px) {
+      min-width: 240px;
+      max-width: 300px;
+    }
+    @media (max-width: 675px) {
+      min-width: unset !important;
+    }
+  }
   .right {
     justify-content: flex-end;
+    max-width: 367px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 0rem 0.75rem;
+    gap: 1rem;
+    align-items: center;
+    @media (max-width: 1464px) {
+      max-width: none;
+      width: fit-content;
+      min-width: 240px;
+    }
+    @media (max-width: 899px) {
+      padding-left: 0;
+      min-width: unset !important;
+    }
   }
 
   .option {
     min-width: 44px;
     min-height: 44px;
-    border-radius: 10px;
+    border-radius: 50%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -78,6 +73,17 @@
     align-items: center;
     .user--avatar {
       border-radius: 10px;
+    }
+    @media (max-width: 899px) {
+      min-width: 40px;
+      min-height: 40px;
+      svg {
+        width: 20px;
+      }
+      .user--avatar {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
   .chat {

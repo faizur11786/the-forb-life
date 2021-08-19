@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
+    <title>The Forbidden Life</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -43,11 +44,32 @@
               <div class="chat--icon">
                 <svg viewBox="0 0 24 24" width="24" height="24">
                   <path
-                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-7v2h2v-2h-2zm2-1.645A3.502 3.502 0 0 0 12 6.5a3.501 3.501 0 0 0-3.433 2.813l1.962.393A1.5 1.5 0 1 1 12 11.5a1 1 0 0 0-1 1V14h2v-.645z"
+                    d="M12 19c.828 0 1.5.672 1.5 1.5S12.828 22 12 22s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-17c3.314 0 6 2.686 6 6 0 2.165-.753 3.29-2.674 4.923C13.399 14.56 13 15.297 13 17h-2c0-2.474.787-3.695 3.031-5.601C15.548 10.11 16 9.434 16 8c0-2.21-1.79-4-4-4S8 5.79 8 8v1H6V8c0-3.314 2.686-6 6-6z"
                   />
                 </svg>
               </div>
             </div>
+
+            <div class="option">
+              <div class="chat--icon">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="option">
+              <div class="chat--icon">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    d="M20 18.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+
             <div class="option">
               <div class="user--avatar">
                 <img
@@ -76,7 +98,19 @@
                       />
                     </div>
                     <div class="list--details">
-                      <h5>Williams</h5>
+                      <h5>My Profile</h5>
+                    </div>
+                  </li>
+                  <li class="list--item">
+                    <div class="list--icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                          d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="list--details">
+                      <h5>Messages</h5>
                     </div>
                   </li>
                   <li class="list--item">
@@ -139,11 +173,23 @@
                       <h5>Saved</h5>
                     </div>
                   </li>
+                  <li class="list--item">
+                    <div class="list--icon">
+                      <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                          d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="list--details">
+                      <h5>More</h5>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="events">
-              <div class="events--item">
+              <!-- <div class="events--item">
                 <div class="events--header">
                   <div class="events--heading">
                     <svg viewBox="0 0 24 24" width="24" height="24">
@@ -189,6 +235,39 @@
                     Voluptatem inventore pariatur quos provident deleniti! Ut!
                   </p>
                 </div>
+              </div> -->
+              <!-- <div class="events--item">
+                <div class="events--header">
+                  <div class="events--heading">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <path
+                        d="M12 .5l4.226 6.183 7.187 2.109-4.575 5.93.215 7.486L12 19.69l-7.053 2.518.215-7.486-4.575-5.93 7.187-2.109L12 .5zM10 12H8a4 4 0 0 0 7.995.2L16 12h-2a2 2 0 0 1-3.995.15L10 12z"
+                      />
+                    </svg>
+                    <h5>Events</h5>
+                  </div>
+                  <div class="close">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <path
+                        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="events--details">
+                  <p class="events--text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Voluptatem inventore pariatur quos provident deleniti! Ut!
+                  </p>
+                </div>
+              </div> -->
+              <div class="events--item banner">
+                <a href="#">
+                  <img src="src/images/post2.jpg" width="100%" alt="" />
+                  <div class="caption">
+                    <h5>Event Heading</h5>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -205,7 +284,7 @@
                         type="text"
                         class="form-control"
                         name=""
-                        placeholder="What's on your mind, Williams"
+                        placeholder="What's on your mind, Will."
                       ></textarea>
                     </form>
                   </div>
@@ -218,7 +297,6 @@
                               d="M21 15v3h3v2h-3v3h-2v-3h-3v-2h3v-3h2zm.008-12c.548 0 .992.445.992.993v9.349A5.99 5.99 0 0 0 20 13V5H4l.001 14 9.292-9.293a.999.999 0 0 1 1.32-.084l.093.085 3.546 3.55a6.003 6.003 0 0 0-3.91 7.743L2.992 21A.993.993 0 0 1 2 20.007V3.993A1 1 0 0 1 2.992 3h18.016zM8 7a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"
                             />
                           </svg>
-                          <span>Photo</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -228,7 +306,6 @@
                               d="M16 4c.552 0 1 .448 1 1v4.2l5.213-3.65c.226-.158.538-.103.697.124.058.084.09.184.09.286v12.08c0 .276-.224.5-.5.5-.103 0-.203-.032-.287-.09L17 14.8V19c0 .552-.448 1-1 1H2c-.552 0-1-.448-1-1V5c0-.552.448-1 1-1h14zM8 8v3H5v2h2.999L8 16h2l-.001-3H13v-2h-3V8H8z"
                             />
                           </svg>
-                          <span>Video</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -238,7 +315,6 @@
                               d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-5-9a5 5 0 0 0 10 0h-2a3 3 0 0 1-6 0H7zm1-2a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
                             />
                           </svg>
-                          <span>Feeling/Activity</span>
                         </a>
                       </div>
                     </div>
@@ -343,7 +419,6 @@
                               d="M14.6 8H21a2 2 0 0 1 2 2v2.104a2 2 0 0 1-.15.762l-3.095 7.515a1 1 0 0 1-.925.619H2a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h3.482a1 1 0 0 0 .817-.423L11.752.85a.5.5 0 0 1 .632-.159l1.814.907a2.5 2.5 0 0 1 1.305 2.853L14.6 8zM7 10.588V19h11.16L21 12.104V10h-6.4a2 2 0 0 1-1.938-2.493l.903-3.548a.5.5 0 0 0-.261-.571l-.661-.33-4.71 6.672c-.25.354-.57.644-.933.858zM5 11H3v8h2v-8z"
                             />
                           </svg>
-                          <span>Like</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -353,7 +428,6 @@
                               d="M5.763 17H20V5H4v13.385L5.763 17zm.692 2L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455z"
                             />
                           </svg>
-                          <span>Comment</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -363,7 +437,6 @@
                               d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z"
                             />
                           </svg>
-                          <span>Report</span>
                         </a>
                       </div>
                     </div>
@@ -380,7 +453,7 @@
                           type="text"
                           class="form-control"
                           name="comment"
-                          placeholder="Submit you comment..."
+                          placeholder="Reply"
                         />
                         <div class="option">
                           <div class="option--item">
@@ -476,7 +549,6 @@
                               d="M14.6 8H21a2 2 0 0 1 2 2v2.104a2 2 0 0 1-.15.762l-3.095 7.515a1 1 0 0 1-.925.619H2a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h3.482a1 1 0 0 0 .817-.423L11.752.85a.5.5 0 0 1 .632-.159l1.814.907a2.5 2.5 0 0 1 1.305 2.853L14.6 8zM7 10.588V19h11.16L21 12.104V10h-6.4a2 2 0 0 1-1.938-2.493l.903-3.548a.5.5 0 0 0-.261-.571l-.661-.33-4.71 6.672c-.25.354-.57.644-.933.858zM5 11H3v8h2v-8z"
                             />
                           </svg>
-                          <span>Like</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -486,7 +558,6 @@
                               d="M5.763 17H20V5H4v13.385L5.763 17zm.692 2L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455z"
                             />
                           </svg>
-                          <span>Comment</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -496,7 +567,6 @@
                               d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z"
                             />
                           </svg>
-                          <span>Report</span>
                         </a>
                       </div>
                     </div>
@@ -513,7 +583,7 @@
                           type="text"
                           class="form-control"
                           name="comment"
-                          placeholder="Submit you comment..."
+                          placeholder="Reply"
                         />
                         <div class="option">
                           <div class="option--item">
@@ -606,7 +676,6 @@
                               d="M14.6 8H21a2 2 0 0 1 2 2v2.104a2 2 0 0 1-.15.762l-3.095 7.515a1 1 0 0 1-.925.619H2a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h3.482a1 1 0 0 0 .817-.423L11.752.85a.5.5 0 0 1 .632-.159l1.814.907a2.5 2.5 0 0 1 1.305 2.853L14.6 8zM7 10.588V19h11.16L21 12.104V10h-6.4a2 2 0 0 1-1.938-2.493l.903-3.548a.5.5 0 0 0-.261-.571l-.661-.33-4.71 6.672c-.25.354-.57.644-.933.858zM5 11H3v8h2v-8z"
                             />
                           </svg>
-                          <span>Like</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -616,7 +685,6 @@
                               d="M5.763 17H20V5H4v13.385L5.763 17zm.692 2L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455z"
                             />
                           </svg>
-                          <span>Comment</span>
                         </a>
                       </div>
                       <div class="reaction--item">
@@ -626,7 +694,6 @@
                               d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z"
                             />
                           </svg>
-                          <span>Report</span>
                         </a>
                       </div>
                     </div>
@@ -643,7 +710,7 @@
                           type="text"
                           class="form-control"
                           name="comment"
-                          placeholder="Submit you comment..."
+                          placeholder="Reply"
                         />
                         <div class="option">
                           <div class="option--item">
