@@ -1,0 +1,19 @@
+.btn {
+  &-primary {
+    background-color: $red;
+    border-color: $red;
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+    &:focus {
+      background-color: $red;
+      border-color: $red;
+      box-shadow: none;
+    }
+    &:active {
+      box-shadow: none !important;
+      background-color: lighten($red, 5);
+    }
+  }
+}
