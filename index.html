@@ -12,6 +12,13 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="dist/css/styles.css" />
   </head>
   <body>
@@ -50,7 +57,7 @@
               </div>
             </div>
 
-            <div class="option">
+            <a href="messenger.html" class="option">
               <div class="chat--icon">
                 <svg viewBox="0 0 24 24" width="24" height="24">
                   <path
@@ -58,7 +65,7 @@
                   ></path>
                 </svg>
               </div>
-            </div>
+            </a>
 
             <div class="option">
               <div class="chat--icon">
@@ -333,7 +340,7 @@
                           alt=""
                         />
                       </div>
-                      <div class="list--details">
+                      <div class="user--details">
                         <a href="">Thomas Luka</a>
                         <ul>
                           <li>1 August at 02:30</li>
@@ -519,7 +526,7 @@
                           alt=""
                         />
                       </div>
-                      <div class="list--details">
+                      <div class="user--details">
                         <a href=""> Harold Craig</a>
                         <ul>
                           <li>10 August at 12:30</li>
@@ -628,7 +635,7 @@
                           alt=""
                         />
                       </div>
-                      <div class="list--details">
+                      <div class="user--details">
                         <a href=""> Harold Craig</a>
                         <ul>
                           <li>10 August at 12:30</li>
@@ -1044,6 +1051,99 @@
       </div>
     </div>
 
+    <div class="messenger--pupup">
+      <div class="messenger">
+        <div class="messenger--header">
+          <div class="user">
+            <div class="user--avatar">
+              <img
+                src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
+                class="user--avatar--img"
+                alt=""
+              />
+            </div>
+            <div class="user--details">
+              <a href="">Thomas Luka</a>
+              <ul>
+                <li>Active 48 m ago</li>
+              </ul>
+            </div>
+          </div>
+          <div class="messenger--action">
+            <a href="messenger.html" class="messenger--action--item">
+              <i class="fas fa-expand"></i>
+            </a>
+            <button class="messenger--action--item close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="messenger--body">
+          <ul class="chat">
+            <li class="chat--item receive">
+              <div class="message">
+                <div class="message--text">Hello Dear, Thomas Luka</div>
+                <span class="message--date">10 Aug 2021, 10:30</span>
+              </div>
+            </li>
+            <li class="chat--item send">
+              <div class="message">
+                <div class="message--text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perferendis, dolores!
+                </div>
+                <span class="message--date">10 Aug 2021, 20:30</span>
+              </div>
+            </li>
+            <li class="chat--item receive">
+              <div class="message">
+                <div class="message--text">Hello Dear, Thomas Luka</div>
+                <span class="message--date">10 Aug 2021, 20:30</span>
+              </div>
+            </li>
+            <li class="chat--item send">
+              <div class="message">
+                <div class="message--text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perferendis, dolores!
+                </div>
+                <span class="message--date">11 Aug 2021, 17:30</span>
+              </div>
+            </li>
+            <li class="chat--item receive">
+              <div class="message">
+                <div class="message--text">Hello Dear, Thomas Luka</div>
+                <span class="message--date">12 Aug 2021, 12:30</span>
+              </div>
+            </li>
+            <li class="chat--item send">
+              <div class="message">
+                <div class="message--text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Perferendis, dolores!
+                </div>
+                <span class="message--date">20 Aug 2021, 09:30</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="messenger--footer">
+          <form action="" class="messenger--input">
+            <input type="text" class="form-control" name="" placeholder="Aa" />
+            <div class="option">
+              <div class="option--item">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5-7h2a3 3 0 0 0 6 0h2a5 5 0 0 1-10 0zm1-2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
       integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
@@ -1054,5 +1154,18 @@
       integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".close").click(function () {
+          $(this).parents(".messenger").remove();
+        });
+      });
+    </script>
   </body>
 </html>

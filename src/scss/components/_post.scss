@@ -1,28 +1,11 @@
 .post {
   &--header {
     padding: 0.75rem 1rem;
+    @include user--details;
     .user {
-      display: flex;
-      gap: 0.65rem;
-      align-items: center;
       &--avatar {
-        min-width: 30px;
-        min-height: 30px;
-      }
-    }
-    ul {
-      display: flex;
-      gap: 0.25rem;
-      align-items: center;
-      color: lighten($gray, 45);
-      li {
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        svg {
-          width: 16px;
-          fill: lighten($gray, 45);
-        }
+        width: 44px;
+        height: 44px;
       }
     }
   }

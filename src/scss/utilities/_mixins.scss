@@ -10,12 +10,14 @@
   &::-webkit-scrollbar-track {
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
-    background-color: $dark-gray;
+    // background-color: $dark-gray;
+    background-color: transparent;
   }
   &::-webkit-scrollbar {
     width: 6px;
     transition: all 0.5s ease-in-out;
-    background-color: $dark-gray;
+    // background-color: $dark-gray;
+    background-color: transparent;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -35,6 +37,47 @@
     background-color: lighten($color, 5);
     svg {
       fill: $white;
+    }
+  }
+}
+
+@mixin user--details {
+  .user {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    &--avatar {
+      width: 35px;
+      height: 35px;
+    }
+    &--details {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-weight: 600;
+        line-height: 20px;
+        width: fit-content;
+        &:hover {
+          color: #da3732;
+          text-decoration: none;
+        }
+      }
+      ul {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        color: lighten($gray, 45);
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          line-height: 15px;
+          svg {
+            width: 16px;
+            fill: lighten($gray, 45);
+          }
+        }
+      }
     }
   }
 }
