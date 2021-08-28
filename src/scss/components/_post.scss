@@ -10,32 +10,7 @@
     }
   }
   &--caption {
-    .caption {
-      padding: 0.5rem 1rem;
-      margin-bottom: 0.25rem;
-      font-size: 16px;
-      &--text {
-        color: $white;
-        p {
-          color: $white;
-          margin-bottom: 0.5rem;
-        }
-      }
-      &--tags {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        column-gap: 0.5rem;
-        .tags--item {
-          a {
-            color: $red;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
+    @include post-caption;
   }
 
   &--media {
@@ -99,40 +74,7 @@
   &--action {
     padding: 1rem;
   }
-  .reaction {
-    display: flex;
-    gap: 1rem;
-    @media (max-width: 425px) {
-      gap: 0.5rem;
-    }
-    &--item {
-      width: 100%;
-      a {
-        width: 100%;
-        font-weight: 600;
-        border-radius: 6px;
-        padding: 0.35rem 0.75rem;
-        font-size: 16px;
-        gap: 0.5rem;
-        @include center;
-        &:hover {
-          background-color: lighten($gray, 5);
-        }
-        svg {
-          width: 20px;
-          fill: lighten($gray, 30);
-        }
-      }
-      &.active {
-        span {
-          color: $red;
-        }
-        svg {
-          fill: $red;
-        }
-      }
-    }
-  }
+  @include post-reaction;
   &--comment {
     display: flex;
     gap: 1rem;
