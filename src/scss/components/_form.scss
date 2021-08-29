@@ -31,6 +31,7 @@ form {
   padding-top: 2rem;
   &--item {
     margin-bottom: 1.5rem;
+    position: relative;
     label {
       color: $white;
       margin-bottom: 0.5rem;
@@ -44,6 +45,68 @@ form {
       a {
         &:hover {
           color: $red;
+        }
+      }
+    }
+    .validation {
+      // display: none;
+      .status {
+        display: flex;
+        position: absolute;
+        right: 2px;
+        top: 37px;
+        &--item {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          @include center;
+          &.error {
+            i {
+              color: $red;
+            }
+          }
+          &.saccess {
+            i {
+              color: green;
+            }
+          }
+        }
+      }
+      .message {
+        font-size: 14px;
+        color: $red;
+        line-height: 18px;
+        display: block;
+        margin-top: 0.25rem;
+        &.saccess {
+          color: green;
+        }
+      }
+    }
+
+    &.error {
+      .validation {
+        display: block !important;
+        .error {
+          display: flex;
+        }
+        .saccess {
+          display: none;
+        }
+      }
+      input {
+        border: 2px solid $red !important;
+      }
+    }
+
+    &.saccess {
+      .validation {
+        display: block !important;
+        .saccess {
+          display: flex;
+        }
+        .error {
+          display: none;
         }
       }
     }

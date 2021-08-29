@@ -1,0 +1,22 @@
+.body {
+  .wizard {
+    // margin-top: 0 !important;
+    // height: 80vh;
+    border-radius: 10px;
+    max-width: 420px;
+    padding: 1rem;
+    background-color: darken($gray, 5);
+    padding-top: 2rem;
+    .brand {
+      margin-bottom: 1rem;
+    }
+    .form {
+      &--item {
+        position: relative;
+        &.btn--row {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
