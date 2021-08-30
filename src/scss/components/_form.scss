@@ -32,6 +32,9 @@ form {
   &--item {
     margin-bottom: 1.5rem;
     position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
     label {
       color: $white;
       margin-bottom: 0.5rem;
@@ -110,7 +113,74 @@ form {
         }
       }
     }
+    .profile {
+      display: flex;
+      justify-content: center;
+      &--pic {
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: 0.475rem 0.5rem;
+        background: darken($gray, 2);
+        border-radius: 10px;
+        &:hover {
+          background: $gray;
+        }
+        &--main {
+          margin-bottom: 0;
+        }
+        &--btn {
+          border-radius: 6px;
+          cursor: pointer;
+          padding: 0.475rem 1.5rem;
+          background: darken($gray, 5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          i {
+            color: $white;
+          }
+          input {
+            all: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer;
+            z-index: -1;
+          }
+        }
+        &--avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          position: relative;
+          overflow: hidden;
+          background: darken($gray, 5);
+          img {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
   }
+  .preferences,
+  .interests {
+    h4 {
+      color: $white;
+      margin-bottom: 1.75rem;
+      font-weight: normal;
+    }
+  }
+
   &--row {
     display: flex;
     gap: 1rem;
