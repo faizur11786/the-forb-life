@@ -39,37 +39,6 @@
           display: flex;
         }
       }
-      &-prev {
-        // display: block;
-        // width: 40px;
-        // height: 40px;
-        // background-color: red !important;
-        // cursor: pointer;
-      }
-      &-nav {
-        display: none !important;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        width: 100%;
-        pointer-events: none;
-        button {
-          display: block;
-          width: 40px;
-          height: 40px;
-          background: rgba($gray, 0.4) !important;
-          cursor: pointer;
-          border-radius: 50%;
-          span {
-            transform: scale(1.5);
-            display: block;
-          }
-        }
-      }
     }
   }
 }

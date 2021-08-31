@@ -1,493 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
-    <title>The Forbidden Life</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="dist/css/styles.css" />
-    <style>
-      .header {
-        padding-bottom: 0.5rem !important;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <div class="header--container">
-        <header class="header container">
-          <div class="left">
-            <div class="brand">
-              <a href="/" class="brand--link">
-                <img src="src/images/logo.svg" width="80px" alt="" />
-              </a>
-            </div>
-          </div>
 
-          <div class="right">
-            <ul class="menu">
-              <li class="menu--item">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
+  <title>The Forbidden Life</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dist/css/styles.css" />
+  <style>
+    .header {
+      padding-bottom: 0.5rem !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="header--container">
+      <header class="header container">
+        <div class="left">
+          <div class="brand">
+            <a href="/" class="brand--link">
+              <img src="src/images/logo.svg" width="80px" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="right">
+          <ul class="menu">
+            <li class="menu--item">
+              <div class="chat--icon">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <path
+                    d="M12 19c.828 0 1.5.672 1.5 1.5S12.828 22 12 22s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-17c3.314 0 6 2.686 6 6 0 2.165-.753 3.29-2.674 4.923C13.399 14.56 13 15.297 13 17h-2c0-2.474.787-3.695 3.031-5.601C15.548 10.11 16 9.434 16 8c0-2.21-1.79-4-4-4S8 5.79 8 8v1H6V8c0-3.314 2.686-6 6-6z" />
+                </svg>
+              </div>
+            </li>
+            <li class="menu--item">
+              <a href="messenger.html">
                 <div class="chat--icon">
                   <svg viewBox="0 0 24 24" width="24" height="24">
                     <path
-                      d="M12 19c.828 0 1.5.672 1.5 1.5S12.828 22 12 22s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-17c3.314 0 6 2.686 6 6 0 2.165-.753 3.29-2.674 4.923C13.399 14.56 13 15.297 13 17h-2c0-2.474.787-3.695 3.031-5.601C15.548 10.11 16 9.434 16 8c0-2.21-1.79-4-4-4S8 5.79 8 8v1H6V8c0-3.314 2.686-6 6-6z"
-                    />
+                      d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z">
+                    </path>
                   </svg>
                 </div>
-              </li>
-              <li class="menu--item">
-                <a href="messenger.html">
-                  <div class="chat--icon">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                      <path
-                        d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </li>
-              <li class="menu--item">
-                <div class="menu--link">
-                  <div class="chat--icon">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                      <path
-                        d="M20 18.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z"
-                      />
-                    </svg>
-                  </div>
+              </a>
+            </li>
+            <li class="menu--item">
+              <div class="menu--link">
+                <div class="chat--icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path
+                      d="M20 18.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                  </svg>
                 </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="menu--item">
-                <div class="menu--link">
-                  <div class="user--avatar">
-                    <img
-                      src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
-                      class="user--avatar--img"
-                      alt=""
-                    />
-                  </div>
+            <li class="menu--item">
+              <div class="menu--link">
+                <div class="user--avatar">
+                  <img
+                    src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                    class="user--avatar--img" alt="" />
                 </div>
-              </li>
-            </ul>
-          </div>
-        </header>
-      </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
 
-      <div class="warpper container warpper--messenger d-flex">
-        <div class="messenger--sidebar">
-          <div class="content">
-            <div class="chatlist">
-              <div class="chatlist--header">
-                <h4>Chats</h4>
-                <!-- <div class="chatlist--action">
+    <div class="warpper container warpper--messenger d-flex">
+      <div class="messenger--sidebar">
+        <div class="content">
+          <div class="chatlist">
+            <div class="chatlist--header">
+              <h4>Chats</h4>
+              <!-- <div class="chatlist--action">
                   <div class="chatlist--action--item">
                     <i></i>
                   </div>
                 </div> -->
+            </div>
+            <div class="chatlist--body">
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img
+                      src="https://aardvark.ghostpool.com/elearn/wp-content/uploads/avatars/72/5cbddabff083e-bpfull.jpg"
+                      class="user--avatar--img" alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Shawn</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="chatlist--body">
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img
+                      src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-client-3-1.jpg"
+                      class="user--avatar--img" alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Harold Craig</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_2.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Christopher</a>
+                    <ul>
+                      <li>11 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img
+                      src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                      class="user--avatar--img" alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Deborah</a>
+                    <ul>
+                      <li>12 August at 12:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_9.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> George</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_11.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Cedric</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_10.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Gabriela</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Alexia</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img
+                      src="https://aardvark.ghostpool.com/elearn/wp-content/uploads/avatars/72/5cbddabff083e-bpfull.jpg"
+                      class="user--avatar--img" alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Shawn</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img
+                      src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-client-3-1.jpg"
+                      class="user--avatar--img" alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Harold Craig</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_2.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Christopher</a>
+                    <ul>
+                      <li>11 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img
+                      src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                      class="user--avatar--img" alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> Deborah</a>
+                    <ul>
+                      <li>12 August at 12:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
-                <div class="chatlist--item">
-                  <div class="user">
-                    <div class="user--avatar">
-                      <img
-                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                        class="user--avatar--img"
-                        alt=""
-                      />
-                    </div>
-                    <div class="user--details">
-                      <a href="#"> Thomas Luka</a>
-                      <ul>
-                        <li>1 August at 02:30</li>
-                        <span aria-hidden="true"> · </span>
-                        <li>6 h</li>
-                      </ul>
-                    </div>
+              </div>
+              <div class="chatlist--item">
+                <div class="user">
+                  <div class="user--avatar">
+                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_9.jpg" class="user--avatar--img"
+                      alt="" />
+                  </div>
+                  <div class="user--details">
+                    <a href="#"> George</a>
+                    <ul>
+                      <li>1 August at 02:30</li>
+                      <span aria-hidden="true"> · </span>
+                      <li>6 h</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="messenger--main">
-          <div class="messenger--container">
-            <div class="messenger--header">
-              <div class="user">
-                <div class="user--avatar">
-                  <img
-                    src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg"
-                    class="user--avatar--img"
-                    alt=""
-                  />
-                </div>
-                <div class="user--details">
-                  <a href="#"> Thomas Luka</a>
-                  <ul>
-                    <li>Active 48 m ago</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="messenger--action">
-                <a href="index.html" class="messenger--action--item">
-                  <i class="fas fa-compress"></i>
-                </a>
-              </div>
-            </div>
-            <div class="messenger--body">
-              <ul class="chat">
-                <li class="chat--item receive">
-                  <div class="message">
-                    <div class="message--text">Hello Dear, Thomas Luka</div>
-                    <span class="message--date">10 Aug 2021, 10:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perferendis, dolores!
-                    </div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">Lorem ipsum dolor,</div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">😀 😃 😄</div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item receive">
-                  <div class="message">
-                    <div class="message--text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint tempora incidunt unde voluptatem quo cupiditate quis
-                      cum ratione odio aliquid?
-                    </div>
-                    <span class="message--date">10 Aug 2021, 10:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">👋</div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item receive">
-                  <div class="message">
-                    <div class="message--text">Hello Dear, Thomas Luka</div>
-                    <span class="message--date">10 Aug 2021, 10:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perferendis, dolores!
-                    </div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">Lorem ipsum dolor,</div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">😀 😃 😄</div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-                <li class="chat--item receive">
-                  <div class="message">
-                    <div class="message--text">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Sint tempora incidunt unde voluptatem quo cupiditate quis
-                      cum ratione odio aliquid?
-                    </div>
-                    <span class="message--date">10 Aug 2021, 10:30</span>
-                  </div>
-                </li>
-                <li class="chat--item send">
-                  <div class="message">
-                    <div class="message--text">👋</div>
-                    <span class="message--date">10 Aug 2021, 20:30</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="messenger--footer">
-              <form action="" class="messenger--input">
-                <input
-                  type="text"
-                  class="form-control"
-                  name=""
-                  placeholder="Aa"
-                />
-                <div class="option">
-                  <div class="option--item">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                      <path
-                        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5-7h2a3 3 0 0 0 6 0h2a5 5 0 0 1-10 0zm1-2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="messenger--sidebar"></div> -->
       </div>
+      <div class="messenger--main">
+        <div class="messenger--container">
+          <div class="messenger--header">
+            <div class="user">
+              <div class="user--avatar">
+                <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_3.jpg" class="user--avatar--img" alt="" />
+              </div>
+              <div class="user--details">
+                <a href="#"> Thomas Luka</a>
+                <ul>
+                  <li>Active 48 m ago</li>
+                </ul>
+              </div>
+            </div>
+            <div class="messenger--action">
+              <a href="index.html" class="messenger--action--item">
+                <i class="fas fa-compress"></i>
+              </a>
+            </div>
+          </div>
+          <div class="messenger--body">
+            <ul class="chat">
+              <li class="chat--item receive">
+                <div class="message">
+                  <div class="message--text">Hello Dear, Thomas Luka</div>
+                  <span class="message--date">10 Aug 2021, 10:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perferendis, dolores!
+                  </div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">Lorem ipsum dolor,</div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">😀 😃 😄</div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item receive">
+                <div class="message">
+                  <div class="message--text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint tempora incidunt unde voluptatem quo cupiditate quis
+                    cum ratione odio aliquid?
+                  </div>
+                  <span class="message--date">10 Aug 2021, 10:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">👋</div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item receive">
+                <div class="message">
+                  <div class="message--text">Hello Dear, Thomas Luka</div>
+                  <span class="message--date">10 Aug 2021, 10:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perferendis, dolores!
+                  </div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">Lorem ipsum dolor,</div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">😀 😃 😄</div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+              <li class="chat--item receive">
+                <div class="message">
+                  <div class="message--text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint tempora incidunt unde voluptatem quo cupiditate quis
+                    cum ratione odio aliquid?
+                  </div>
+                  <span class="message--date">10 Aug 2021, 10:30</span>
+                </div>
+              </li>
+              <li class="chat--item send">
+                <div class="message">
+                  <div class="message--text">👋</div>
+                  <span class="message--date">10 Aug 2021, 20:30</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="messenger--footer">
+            <form action="" class="messenger--input">
+              <input type="text" class="form-control" name="" placeholder="Aa" />
+              <div class="option">
+                <div class="option--item">
+                  <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path
+                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5-7h2a3 3 0 0 0 6 0h2a5 5 0 0 1-10 0zm1-2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="messenger--sidebar"></div> -->
     </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <script></script>
-  </body>
+  <script></script>
+</body>
+
 </html>

@@ -1,1 +1,20 @@
 
+.confirm-age{
+    .icon {
+        margin-bottom: 2rem !important;
+        display: block;
+        i{
+            color: $red;
+            font-size: 2rem;
+        }
+    }
+    h4{
+        span{
+            color: $red;
+        }
+    }
+    .term-pp--link{
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+}
