@@ -12,10 +12,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="dist/css/styles.css" />
 </head>
 
-<body>
+<body class="overflow-hidden">
   <div class="wrapper auth--layout">
     <div class="auth--layout--banner">
       <img src="src/images/pic-5.jpg" class="banner--img" alt="" />
@@ -54,6 +56,28 @@
                 </div>
               </div>
               <div class="step-2 d-none profile--upload">
+
+                <div class="form--item">
+                  <label for="create--bio">Create Bio</label>
+                  <input type="text" id="create--bio" class="form-control" placeholder="Create Bio" />
+                </div>
+                <div class="form--item">
+                  <label for="location">Location</label>
+                  <input type="text" id="location" class="form-control" placeholder="Location" />
+                </div>
+                <div class="form--item">
+                  <label for="location">Location</label>
+                  <div class="custom--select">
+                    <select class="select" name="state">
+                      <option value="AL">Location #1</option>
+                      <option value="WY">Location #2</option>
+                      <option value="AL">Location #3</option>
+                      <option value="WY">Location #4</option>
+                      <option value="AL">Location #5</option>
+                      <option value="WY">Location #6</option>
+                    </select>
+                  </div>
+                </div>
                 <div class="form--item">
                   <div class="profile--pic">
                     <div class="profile--pic--avatar">
@@ -177,6 +201,35 @@
                     </div>
                   </div>
                 </div>
+                <div class="form--item">
+                  <h4>Visibility</h4>
+                  <div class="custom--checkbox--group">
+                    <div class="custom--checkbox--item">
+                      <label for="private" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="private" id="private" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-lock"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Private</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="public" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="public" id="public" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Public</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
                 <div class="form--item btn--row">
                   <div onclick="stepThree(this)" class="btn btn-primary btn-block step--btn1">
                     Finish
@@ -192,8 +245,12 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
   <script>
+    $( document ).ready( function () {
+      $( '.select' ).select2();
+    } );
     function stepOne( e ) {
       $( e ).parents( ".step-1" ).addClass( "d-none" );
       $( ".profile--upload" ).removeClass( "d-none" );

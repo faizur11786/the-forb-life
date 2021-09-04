@@ -176,8 +176,9 @@ form {
   .interests {
     h4 {
       color: $white;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1rem;
       font-weight: normal;
+      font-size: 18px;
     }
   }
 
@@ -234,5 +235,34 @@ form {
   }
   .btn-primary {
     padding: 0.475rem 1.5rem;
+  }
+}
+
+.resendinfo {
+  p {
+    margin: 0 !important;
+    a {
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+.otp--form{
+  
+  h4{
+    color: $white;
+    text-align: center;
+
+  }
+ .info{
+   color: $white;
+    text-align: center;
+    margin-bottom: 2rem;
+    span{
+      color: $white;
+      font-weight: 600;
+    }
   }
 }

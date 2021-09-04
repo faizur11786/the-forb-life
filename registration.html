@@ -86,7 +86,36 @@
                   <input type="number" id="mobile" class="form-control" placeholder="Mobile Number" />
                 </div>
                 <div class="form--item">
-                  <button class="btn btn-primary btn-block">Submit</button>
+                  <div class="btn btn-primary btn-block" onclick="stepFour(this)">Submit</div>
+                </div>
+              </div>
+              <div class="step-5 d-none otp--form">
+                <h4>Authenticate Your Account</h4>
+                <p class="info">Please confirm your account by entering the authorization code sent to
+                  <span>***-***-2344</span>
+                </p>
+                <div class="form--item">
+                  <div class="otp--group">
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="one"
+                      onkeyup="clickEvent(this,'two')" />
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="two"
+                      onkeyup="clickEvent(this,'three')" />
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="three"
+                      onkeyup="clickEvent(this,'four')" />
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="four"
+                      onkeyup="clickEvent(this,'five')" />
+                    <!-- <input type="text" class="otp--input" maxlength="1" id="five" onkeyup="clickEvent(this,'six')" />
+                    <input type="text" class="otp--input" maxlength="1" id="six" /> -->
+                  </div>
+                </div>
+                <div class="form--item">
+                  <div class="resendinfo">
+                    <p>It may take a minute to receive your code.</p>
+                    <p>Haven't received it? <a href="#">Resend a new code</a></p>
+                  </div>
+                </div>
+                <div class="form--item">
+                  <a href="pricing.html" class="btn btn-primary btn-block">Submit</a>
                 </div>
               </div>
             </form>
@@ -103,6 +132,11 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script>
+    function clickEvent( first, last ) {
+      if ( first.value.length ) {
+        document.getElementById( last ).focus();
+      }
+    }
     function stepOne( e ) {
       $( e ).parents( ".step-1" ).addClass( "d-none" );
       $( ".register--form" ).removeClass( "d-none" );
@@ -114,6 +148,10 @@
     function stepThree( e ) {
       $( e ).parents( ".step-3" ).addClass( "d-none" );
       $( ".mobile--form" ).removeClass( "d-none" );
+    }
+    function stepFour( e ) {
+      $( e ).parents( ".step-4" ).addClass( "d-none" );
+      $( ".otp--form" ).removeClass( "d-none" );
     }
   </script>
 </body>
