@@ -1,6 +1,6 @@
 .auth--layout {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
   display: flex;
   background-color: $dark-gray;
   position: relative;
@@ -70,12 +70,13 @@
     }
   }
   .pricing--container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);;
-    padding: 1rem;
-    width: 100%;
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);;
+    // padding: 1rem;
+    // width: 100%;
+    margin: 0 auto;
     .container{
 
     }

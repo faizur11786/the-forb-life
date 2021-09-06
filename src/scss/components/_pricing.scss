@@ -2,10 +2,24 @@
     &--content {
         width: 80%;
         margin: 0 auto;
-        height: 80vh;
+        min-height: 80vh;
         overflow: hidden;
         border-radius: 10px !important;
         display: flex;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        @media (max-width:1200px) {
+          width: 90%;
+        }
+        @media (max-width:1000px) {
+          width: 100%;
+           margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+        .brand{
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
         .card {
             flex: 1 1 auto;
             width: 100%;
@@ -16,9 +30,7 @@
             }
             &--body {
                 flex: 1 1 auto;
-                overflow: auto;
-                padding-top: 2rem;
-                @include scrollbar;
+                padding: 2rem 0;
             }
         }
     }
@@ -42,8 +54,15 @@
     &--container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        height: 96%;
-        gap:0.5rem
+        gap:0.5rem;
+        @media (max-width:1000px) {
+            gap:1.5rem;
+            row-gap: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width:560px){
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &--header{
         min-height: 130px;
@@ -110,7 +129,7 @@
             border: 2px solid $red;
             position: absolute;
             top: 50%;
-            left: -1px;
+            left: 0;
             -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
            background-color: $gray;
