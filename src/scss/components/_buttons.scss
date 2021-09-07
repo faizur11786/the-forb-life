@@ -40,11 +40,11 @@
   &--link {
     font-weight: 600;
     color: $red;
-    padding-left: 0;
-    padding-right: 0;
+    border-radius: 6px;
     &:hover {
       font-weight: 600;
       color: $red;
+      background-color: lighten($gray, 2);
     }
   }
 }
