@@ -47,6 +47,26 @@
       background-color: lighten($gray, 2);
     }
   }
+  &-group {
+    gap: 0.25rem;
+    .btn {
+      color: $white !important;
+      background: lighten($dark-gray, 20);
+      border-radius: 0.25rem !important;
+      font-weight: normal;
+      &:focus {
+        box-shadow: none !important;
+      }
+      &-check {
+        &:checked {
+          + .btn {
+            background: $red;
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 .btn--group {
