@@ -82,7 +82,7 @@
                 <div class="profile--cover">
                     <img src="src/images/pic-6.jpg" alt="">
                 </div>
-                <div class="profile--container">
+                <div class="profile--container mobile-p-0">
                     <div class="profile--belongto">
                         <div class="profile--belongto--left">
                             <div class="user">
@@ -96,6 +96,11 @@
                                 <span><a href="">1.2K Friends</a></span>
                             </div>
                         </div>
+                        <div class="profile--belongto--right">
+                            <button class="btn btn-secondary icon">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                        </div>
 
                     </div>
                     <div class="profile--tabs">
@@ -105,10 +110,10 @@
                                     data-bs-target="#pills-post" type="button" role="tab" aria-controls="pills-post"
                                     aria-selected="true">Posts</button>
                             </li>
-                            <li class="nav-item" role="presentation">
+                            <!-- <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about"
-                                    aria-selected="false">About</button>
+                                    aria-selected="false">About</button> -->
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-friends-tab" data-bs-toggle="pill"
@@ -136,6 +141,35 @@
                             aria-labelledby="pills-post-tab">
                             <div class="post--content">
                                 <div class="post--left">
+                                    <div class="card">
+                                        <div class="card--header">
+                                            <div>
+                                                <h4>Intro</h4>
+                                            </div>
+                                        </div>
+                                        <div class="card--body">
+                                            <div class="intro--content">
+                                                <div class="intro--item bio">
+                                                    <h5 class="">🌌 Want to learn a few Forbidden bio tricks to make
+                                                        your</h5>
+
+                                                </div>
+                                                <div class="intro--item">
+                                                    <div class="icon">
+                                                        <i class="fas fa-location-arrow"></i>
+                                                    </div>
+                                                    <p>1575/2A Wyecroft Road, Snelgrove</p>
+                                                </div>
+                                                <div class="intro--item">
+                                                    <div class="icon">
+                                                        <i class="fas fa-clock"></i>
+                                                    </div>
+                                                    <p>Joined on May 2019</p>
+                                                </div>
+                                                <button class="btn btn-secondary btn-block">Edit Details</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="card">
                                         <div class="card--header">
                                             <div>
@@ -702,8 +736,7 @@
                                     <div class="card--body">
                                         <div class="about--row">
                                             <div class="about--col">
-                                                <h4 class="about--col--heading">Send me an email when the following
-                                                    happens</h4>
+                                                <h4 class="about--col--heading">Email Notification</h4>
                                                 <div class="setting--section">
                                                     <h4 class="setting--heading">When I receive</h4>
                                                     <ul class="option">
@@ -999,11 +1032,9 @@
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Action</button></li>
-                                                                <li><button class="dropdown-item" type="button">Another
-                                                                        action</button></li>
+                                                                        type="button">Block</button></li>
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Something else here</button></li>
+                                                                        type="button">Unfriend</button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1035,11 +1066,9 @@
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Action</button></li>
-                                                                <li><button class="dropdown-item" type="button">Another
-                                                                        action</button></li>
+                                                                        type="button">Block</button></li>
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Something else here</button></li>
+                                                                        type="button">Unfriend</button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1071,11 +1100,9 @@
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Action</button></li>
-                                                                <li><button class="dropdown-item" type="button">Another
-                                                                        action</button></li>
+                                                                        type="button">Block</button></li>
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Something else here</button></li>
+                                                                        type="button">Unfriend</button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1107,11 +1134,9 @@
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Action</button></li>
-                                                                <li><button class="dropdown-item" type="button">Another
-                                                                        action</button></li>
+                                                                        type="button">Block</button></li>
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Something else here</button></li>
+                                                                        type="button">Unfriend</button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1143,11 +1168,9 @@
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Action</button></li>
-                                                                <li><button class="dropdown-item" type="button">Another
-                                                                        action</button></li>
+                                                                        type="button">Block</button></li>
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Something else here</button></li>
+                                                                        type="button">Unfriend</button></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1179,11 +1202,9 @@
                                                             </button>
                                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Action</button></li>
-                                                                <li><button class="dropdown-item" type="button">Another
-                                                                        action</button></li>
+                                                                        type="button">Block</button></li>
                                                                 <li><button class="dropdown-item"
-                                                                        type="button">Something else here</button></li>
+                                                                        type="button">Unfriend</button></li>
                                                             </ul>
                                                         </div>
                                                     </div>

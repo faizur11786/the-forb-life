@@ -6,6 +6,11 @@
         @media (max-width: 992px) {
             padding: 0 1rem;
         }
+        @media (max-width: 425px) {
+            &.mobile-p-0 {
+                padding: 0;
+            }
+        }
         .card {
             background-color: lighten($dark-gray, 5) !important;
             border-radius: 10px;
@@ -22,6 +27,39 @@
             }
             &--body {
                 padding: 1rem;
+            }
+        }
+        .intro {
+            &--item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 0.75rem;
+                margin-bottom: 1rem;
+                &.bio {
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin-bottom: 1.5rem;
+                    h5 {
+                        color: $white;
+                        font-size: 1.1rem;
+                        font-weight: normal;
+                        text-align: center;
+                        line-height: 33px;
+                    }
+                }
+                .icon {
+                    width: 25px;
+                    height: 25px;
+                    @include center;
+                    i {
+                        color: $red;
+                    }
+                }
+                p {
+                    color: $white;
+                }
             }
         }
     }
@@ -46,6 +84,7 @@
         justify-content: space-between;
         align-items: flex-end;
         padding: 0 1rem;
+        position: relative;
         @media (max-width: 992px) {
             padding: 0;
             justify-content: center;
@@ -92,13 +131,30 @@
                 opacity: 0.8;
             }
         }
+        &--right {
+            position: relative;
+            @media (max-width: 992px) {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            @media (max-width: 425px) {
+                top: 0.5rem;
+                right: 0.75rem;
+                opacity: 0.5;
+            }
+            .icon {
+            }
+        }
     }
     &--tabs {
         margin-top: 2rem;
         padding: 1rem;
         background-color: lighten($dark-gray, 5);
         border-radius: 6px;
-
+        @media (max-width: 425px) {
+            border-radius: 0;
+        }
         .nav {
             gap: 0.5rem;
             flex-wrap: nowrap;
@@ -147,7 +203,7 @@
                 flex-direction: column;
                 gap: 1rem;
                 @media (max-width: 992px) {
-                    // display: none;
+                    display: none;
                     max-width: 500px;
                     width: 100%;
                 }
@@ -157,6 +213,24 @@
                 .feed {
                     @media (max-width: 992px) {
                         max-width: 500px;
+                    }
+                    .post--media--group {
+                        &--item {
+                            @media (max-width: 992px) {
+                                max-height: 250px;
+                            }
+                            @media (max-width: 540px) {
+                                max-height: 155px;
+                            }
+                        }
+                    }
+                    .post--media--item {
+                        @media (max-width: 992px) {
+                            max-height: 500px;
+                        }
+                        @media (max-width: 768px) {
+                            max-height: 400px;
+                        }
                     }
                 }
             }
