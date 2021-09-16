@@ -67,15 +67,18 @@
               </div>
             </li>
 
-            <li class="menu--item">
-              <div class="menu--link">
-                <div class="user--avatar">
-                  <img
-                    src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
-                    class="user--avatar--img" alt="" />
-                </div>
+            <div class="dropdown">
+              <div class="user--avatar" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                  class="user--avatar--img" alt="" />
               </div>
-            </li>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#"><i class="fas fa-file-invoice-dollar"></i>Billing</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+              </ul>
+            </div>
           </ul>
         </div>
       </header>

@@ -160,9 +160,15 @@
             flex-wrap: nowrap;
             overflow: auto;
             &-item {
+                @media (max-width: 768px) {
+                    flex: auto;
+                }
             }
             &-link {
                 border-radius: 4px !important;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
                 &.active {
                 }
                 &:hover {

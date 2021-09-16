@@ -63,15 +63,19 @@
                                 </div>
                             </div>
                         </li>
-
-                        <li class="menu--item">
-                            <div class="menu--link">
-                                <div class="user--avatar">
-                                    <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
-                                        class="user--avatar--img" alt="" />
-                                </div>
+                        <div class="dropdown">
+                            <div class="user--avatar" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                                    class="user--avatar--img" alt="" />
                             </div>
-                        </li>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-file-invoice-dollar"></i>Billing</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </header>
@@ -96,12 +100,14 @@
                                 <span><a href="">1.2K Friends</a></span>
                             </div>
                         </div>
+                        <!-- Button trigger modal -->
                         <div class="profile--belongto--right">
-                            <button class="btn btn-secondary icon">
+                            <button type="button" class="btn btn-secondary icon" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
                                 <i class="fas fa-cog"></i>
                             </button>
                         </div>
-
+                        <!-- Button trigger modal -->
                     </div>
                     <div class="profile--tabs">
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -113,8 +119,8 @@
                             <!-- <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about"
-                                    aria-selected="false">About</button> -->
-                            </li>
+                                    aria-selected="false">About</button>
+                            </li> -->
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-friends-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-friends" type="button" role="tab"
@@ -150,7 +156,7 @@
                                         <div class="card--body">
                                             <div class="intro--content">
                                                 <div class="intro--item bio">
-                                                    <h5 class="">🌌 Want to learn a few Forbidden bio tricks to make
+                                                    <h5 class="">Want to learn a few Forbidden bio tricks to make
                                                         your</h5>
 
                                                 </div>
@@ -1365,6 +1371,256 @@
         <!-- <div class="messenger--sidebar"></div> -->
     </div>
     </div>
+    <!-- Setting--Modal -->
+    <div class="modal setting--modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="setting--row">
+                        <div class="setting--col">
+                            <h4 class="setting--col--heading">Email Notification</h4>
+                            <div class="setting--section">
+                                <h4 class="setting--heading">When I receive</h4>
+                                <ul class="option">
+                                    <li class="option--item">
+                                        <p>Friends Request</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input" checked>
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Message</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input" checked>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="setting--section">
+                                <h4 class="setting--heading">When I get</h4>
+                                <ul class="option">
+                                    <li class="option--item">
+                                        <p>Tagged in Post</p>
+                                        <div>
+                                            <div class="costum--switch">
+                                                <input type="checkbox" class="costum--switch--input" checked>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Tagged in Photo</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input">
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Comment on my Post</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input" checked>
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Reaction on my Post</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input">
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Approved as Group Member</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input" checked>
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Moderation Approval</p>
+                                        <div class="costum--switch">
+                                            <input type="checkbox" class="costum--switch--input" checked>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setting--col">
+                            <h4 class="setting--col--heading">Privacy Settings</h4>
+                            <div class="setting--section">
+                                <h4 class="setting--heading">Views</h4>
+                                <ul class="option">
+                                    <li class="option--item">
+                                        <p>My Profile</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Private
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Public</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="option--item">
+                                        <p>My Friends List</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Public
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Private</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>My Photos/Media</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Friends
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Public</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Private</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="setting--section">
+                                <h4 class="setting--heading">Wall</h4>
+                                <ul class="option">
+                                    <li class="option--item">
+                                        <p>Who can view</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Private
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Public</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Who can Comment</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Public
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Private</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Search me</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Private
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Public</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Tag me</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Private
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Public</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="option--item">
+                                        <p>Messgae me</p>
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Public
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Friends</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Private</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="card ">
+                        <div class="card--body">
+                            
+                        </div>
+                    </div> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Setting--Modal -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"

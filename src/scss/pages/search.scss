@@ -126,6 +126,9 @@
                 display: flex;
                 gap: 0.75rem;
                 align-items: center;
+                @media (max-width: 520px) {
+                    gap: 0.5rem;
+                }
                 .info {
                     > span {
                         display: -webkit-box;
@@ -144,6 +147,7 @@
                         overflow: hidden;
                         @media (max-width: 520px) {
                             margin-bottom: 0;
+                            font-size: 1rem;
                         }
                         &:hover {
                             color: $red;
@@ -258,6 +262,17 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        .search {
+            @media (max-width: 630px) {
+                .input-group {
+                    border-radius: 6px !important;
+                    width: 100%;
+                }
+                .form-control {
+                    display: block !important;
                 }
             }
         }

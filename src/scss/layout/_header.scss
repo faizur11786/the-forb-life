@@ -88,6 +88,40 @@
         }
       }
     }
+    .dropdown {
+      &-menu {
+        &.show {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+
+      &-item {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: -0.25rem;
+          border-bottom: 1px solid lighten($gray, 20);
+        }
+      }
+      li {
+        &:first-child {
+          .dropdown-item {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
   .chat {
     &--icon {
