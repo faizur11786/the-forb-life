@@ -1,0 +1,168 @@
+@mixin scrollbar {
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($red, 1);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: lighten($dark-gray, 5);
+    }
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    // background-color: $dark-gray;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+    transition: all 0.5s ease-in-out;
+    // background-color: $dark-gray;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba($red, 0);
+  }
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin hoverEffect($color: $gray) {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: lighten($color, 5);
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+@mixin user--details {
+  .user {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    &--avatar {
+      width: 35px;
+      height: 35px;
+    }
+    &--details {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-weight: 600;
+        line-height: 20px;
+        width: fit-content;
+        &:hover {
+          color: #da3732;
+          text-decoration: none;
+        }
+      }
+      ul {
+        display: flex;
+        gap: 0.25rem;
+        align-items: center;
+        color: lighten($gray, 45);
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          line-height: 15px;
+          svg {
+            width: 16px;
+            fill: lighten($gray, 45);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin post-caption {
+  .caption {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 16px;
+    &--text {
+      color: $white;
+      p {
+        color: $white;
+        margin-bottom: 0.5rem;
+      }
+    }
+    &--tags {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      column-gap: 0.5rem;
+      .tags--item {
+        a {
+          color: $red;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin post-reaction {
+  .reaction {
+    display: flex;
+    gap: 1rem;
+    @media (max-width: 425px) {
+      gap: 0.5rem;
+    }
+    &--item {
+      width: 100%;
+      a {
+        width: 100%;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 0.35rem 0.75rem;
+        font-size: 16px;
+        gap: 0.5rem;
+        @include center;
+        &:hover {
+          background-color: lighten($gray, 5);
+        }
+        svg {
+          width: 20px;
+          fill: lighten($gray, 30);
+        }
+      }
+      &.active {
+        span {
+          color: $red;
+        }
+        svg {
+          fill: $red;
+        }
+      }
+    }
+  }
+}
+
+@mixin imgHover {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.027);
+  }
+  &:hover {
+    &::before {
+      background: rgba(255, 255, 255, 0.075);
+    }
+  }
+}

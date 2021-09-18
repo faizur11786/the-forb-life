@@ -1,0 +1,150 @@
+.warpper {
+  &--gallery {
+    height: calc(100vh - 82px);
+    display: flex;
+    .gallery {
+      display: flex;
+      flex: 1 1 auto;
+      width: 100vw;
+
+      &--images {
+        flex: 1 1 auto;
+        background: $dark-gray;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+      }
+      &--details {
+        max-width: 450px;
+        min-width: 450px;
+        width: 100%;
+        padding: 1rem;
+        flex: 1 1 auto;
+        background: $gray;
+        padding: 0.75rem;
+        display: flex;
+        overflow: auto;
+        @include scrollbar;
+      }
+      &--action {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      &--header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-top: 1px solid $gray;
+        padding: 0.75rem 1rem;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        .action {
+          &--link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            background: rgba($gray, 0.4);
+            @include center;
+            &:hover {
+              background: lighten($gray, 0.5);
+              i {
+                color: $red;
+              }
+            }
+            i {
+              color: $white;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+      &--body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        .owl-carousel {
+          flex: 1 1 auto;
+          display: flex;
+        }
+        &:hover{
+          .gallery--navigation {
+             opacity: 1;
+             top: 48%;
+            background-color: lighten($dark-gray,5) !important;
+          }
+        }
+      }
+      &--navigation{
+        position: absolute;
+        background-color: lighten($dark-gray,2.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 9;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+        @include center;
+        i{
+          color: $white;
+          font-size: 1.5rem;
+        }
+        &.next--btn{
+          left: unset;
+          right: 2rem !important;
+        }
+        &:hover{
+          i{
+            color: $red;
+          }
+        }
+      }
+    }
+    .details {
+      &--card {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      &--header {
+        background-color: lighten($gray, 5);
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include user--details;
+        .user--avatar {
+          width: 44px;
+          height: 44px;
+        }
+      }
+      &--body {
+        flex: 1 1 auto;
+        @include post-caption;
+        .caption {
+          padding: 0.5rem 0.75rem;
+        }
+        @include post-reaction;
+        .post--action {
+          padding: 0;
+          padding-bottom: 3rem;
+        }
+      }
+      &--footer {
+        flex: 1 1 auto;
+        border: 1px solid rgb(30, 27, 34);
+      }
+    }
+  }
+}

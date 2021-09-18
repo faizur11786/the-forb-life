@@ -1,0 +1,15 @@
+.body {
+  .wizard {
+    .brand {
+      margin-bottom: 1rem;
+    }
+    .form {
+      &--item {
+        position: relative;
+        &.btn--row {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

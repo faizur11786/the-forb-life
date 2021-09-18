@@ -1,0 +1,50 @@
+.sidebar {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0 0.75rem;
+  // margin-bottom: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 90px);
+  overflow: auto;
+  @include scrollbar;
+  @media (max-width: 1464px) {
+    max-width: none;
+    width: fit-content;
+    min-width: 240px;
+    max-width: 300px;
+  }
+  @media (max-width: 1099px) {
+    display: none;
+  }
+  &--right {
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    height: calc(100vh - 90px);
+    overflow: auto;
+    @include scrollbar;
+    .content {
+      width: 100%;
+    }
+    @media (max-width: 899px) {
+      display: none;
+    }
+    .list--group {
+      border-bottom: none;
+    }
+  }
+  .list {
+    &--item {
+      margin-bottom: 0.75rem;
+    }
+  }
+  .copyright {
+    color: lighten($gray, 30);
+  }
+}

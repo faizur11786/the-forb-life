@@ -1,0 +1,78 @@
+.btn {
+  &:focus {
+    box-shadow: none;
+  }
+  &-primary {
+    background-color: $red;
+    border-color: $red;
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+    &:focus {
+      background-color: $red;
+      border-color: $red;
+    }
+    &:active {
+      box-shadow: none !important;
+      background-color: lighten($red, 5);
+    }
+  }
+  &-secondary {
+    background-color: lighten($gray, 10);
+    border-color: lighten($gray, 10);
+    &:hover {
+      background-color: lighten($gray, 08);
+      border-color: lighten($gray, 08);
+    }
+    &:focus {
+      background-color: lighten($gray, 10);
+      border-color: lighten($gray, 10);
+    }
+    &:active {
+      box-shadow: none !important;
+      background-color: lighten($gray, 5);
+    }
+  }
+  &-block {
+    width: 100%;
+  }
+  &--link {
+    font-weight: 600;
+    color: $red;
+    border-radius: 6px;
+    &:hover {
+      font-weight: 600;
+      color: $red;
+      background-color: lighten($gray, 2);
+    }
+  }
+  &-group {
+    gap: 0.25rem;
+    .btn {
+      color: $white !important;
+      background: lighten($dark-gray, 20);
+      border-radius: 0.25rem !important;
+      font-weight: normal;
+      &:focus {
+        box-shadow: none !important;
+      }
+      &-check {
+        &:checked {
+          + .btn {
+            background: $red;
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn--group {
+  display: flex;
+  gap: 1rem;
+  .btn {
+    width: 100%;
+  }
+}

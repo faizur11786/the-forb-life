@@ -1,0 +1,44 @@
+.gallery {
+  &--slider {
+    .slider {
+      .owl-stage {
+        display: flex;
+        flex-direction: column;
+      }
+      &--content {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      &--item {
+        flex: 1 1 auto;
+        display: flex;
+      }
+      &--img {
+        width: unset !important;
+        max-width: 100%;
+        max-height: 100% !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .owl {
+      position: relative;
+      &-item {
+        flex: 1 1 auto;
+        display: flex;
+      }
+      &-stage {
+        flex: 1 1 auto;
+        display: flex;
+        &-outer {
+          display: flex;
+        }
+      }
+    }
+  }
+}

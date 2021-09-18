@@ -1,0 +1,16 @@
+$dark-gray: #1f1e1e;
+$black: #000000;
+$red: #da3732;
+$gray: #343232;
+$white: #e4e6eb;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  color: lighten($gray, 45);
+}

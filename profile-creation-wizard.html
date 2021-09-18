@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
+  <title>Wizard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="dist/css/styles.css" />
+</head>
+
+<body class="overflow-hidden">
+  <div class="wrapper auth--layout">
+    <div class="auth--layout--banner">
+      <img src="src/images/pic-5.jpg" class="banner--img" alt="" />
+    </div>
+    <div class="auth--layout--content">
+      <div class="body">
+        <div class="content wizard">
+          <div class="card">
+            <div class="brand">
+              <a href="/" class="brand--link">
+                <img src="src/images/logo.svg" width="120px" alt="" />
+              </a>
+            </div>
+            <form class="form">
+              <div class="step-1">
+                <div class="form--item saccess">
+                  <label for="firstname">Create a Username</label>
+                  <input type="text" id="firstname" value="adamlayon" class="form-control"
+                    placeholder="Create a Username" />
+                  <div class="validation">
+                    <div class="status">
+                      <div class="status--item error">
+                        <i class="fas fa-exclamation-circle"></i>
+                      </div>
+                      <div class="status--item saccess">
+                        <i class="fas fa-check-circle"></i>
+                      </div>
+                    </div>
+                    <span class="message error">Username <b>@adamlayon</b> already exists.</span>
+                  </div>
+                </div>
+                <div class="form--item btn--row">
+                  <div onclick="stepOne(this)" class="btn btn-primary btn-block step--btn1">
+                    Create
+                  </div>
+                </div>
+              </div>
+              <div class="step-2 d-none profile--upload">
+
+                <div class="form--item">
+                  <label for="create--bio">Your Bio</label>
+                  <input type="text" id="create--bio" class="form-control" placeholder="Create Bio" />
+                </div>
+                <div class="form--item">
+                  <label for="location">Your Location</label>
+                  <div class="custom--select">
+                    <select class="select" name="state">
+                      <option value="AL">Location #1</option>
+                      <option value="WY">Location #2</option>
+                      <option value="AL">Location #3</option>
+                      <option value="WY">Location #4</option>
+                      <option value="AL">Location #5</option>
+                      <option value="WY">Location #6</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form--item">
+                  <div class="profile--pic">
+                    <div class="profile--pic--avatar">
+                      <img id="uploaded-profile" class="avatar-img"
+                        src="https://nmi.edu.af/wp-content/uploads/2017/05/team_9.jpg" alt="" id="profile" />
+                    </div>
+                    <label for="file-input" class="profile--pic--main">
+                      <div class="profile--pic--btn">
+                        <input type="file" class="file-input" id="file-input" />
+                        <span>Upload Profile Picture</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="form--item btn--row">
+                  <div onclick="stepTwo(this)" class="btn btn-primary btn-block step--btn1">
+                    Next
+                  </div>
+                </div>
+
+              </div>
+              <div class="step-3 d-none interests">
+                <div class="form--item">
+                  <h4>Interests</h4>
+                  <div class="custom--checkbox--group">
+                    <div class="custom--checkbox--item">
+                      <label for="male" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="male" id="male" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-mars"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Male</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="female" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="female" id="female" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-venus"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Female</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form--item btn--row">
+                  <div onclick="stepThree(this)" class="btn btn-primary btn-block step--btn1">
+                    Next
+                  </div>
+                </div>
+              </div>
+              <div class="step-4 d-none preferences">
+                <div class="form--item">
+                  <h4>Preferences</h4>
+                  <div class="custom--checkbox--group">
+                    <div class="custom--checkbox--item">
+                      <label for="option3" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="option3" id="option3" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fab fa-dailymotion"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Option #3</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="option4" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="option4" id="option4" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fab fa-playstation"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Option #4</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="option5" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="option5" id="option5" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-prescription"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Option #5</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="option6" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="option6" id="option6" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Option #6</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="option7" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="option7" id="option7" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-donate"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Option #7</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form--item">
+                  <h4>Visibility</h4>
+                  <div class="custom--checkbox--group">
+                    <div class="custom--checkbox--item">
+                      <label for="private" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="private" id="private" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-lock"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Private</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="custom--checkbox--item">
+                      <label for="public" class="custom--checkbox--content">
+                        <input type="checkbox" name="interest" name="public" id="public" />
+                        <div class="custom--checkbox--icon">
+                          <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <p class="custom--checkbox--label">Public</p>
+                        <div class="check--icon">
+                          <i class="fas fa-check-circle"></i>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form--item btn--row">
+                  <div onclick="stepThree(this)" class="btn btn-primary btn-block step--btn1">
+                    Finish
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+    $( document ).ready( function () {
+      $( '.select' ).select2();
+    } );
+    function stepOne( e ) {
+      $( e ).parents( ".step-1" ).addClass( "d-none" );
+      $( ".profile--upload" ).removeClass( "d-none" );
+    }
+    function stepTwo( e ) {
+      $( e ).parents( ".step-2" ).addClass( "d-none" );
+      $( ".interests" ).removeClass( "d-none" );
+    }
+    function stepThree( e ) {
+      $( e ).parents( ".step-3" ).addClass( "d-none" );
+      $( ".preferences" ).removeClass( "d-none" );
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+.list {
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+    h5 {
+      svg {
+        width: 20px;
+        fill: lighten($gray, 10);
+        margin-top: -4px;
+      }
+    }
+  }
+  &--body {
+  }
+  &--icon {
+    width: 40px;
+    height: 40px;
+    @include center;
+    background-color: $red;
+    border-radius: 50%;
+    svg {
+      width: 20px;
+      fill: $white;
+    }
+  }
+  &--group {
+    padding: 0.5rem 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid $gray;
+  }
+  &--item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.42rem 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 0.1rem;
+    @include hoverEffect;
+    .user--avatar {
+      max-width: 40px;
+      max-height: 40px;
+    }
+  }
+  &--details {
+    line-height: 20px;
+    h5,
+    a {
+      display: block;
+      font-weight: 500;
+      color: $white;
+      font-size: 16px;
+      width: fit-content;
+      &:hover {
+        color: $red;
+      }
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+}

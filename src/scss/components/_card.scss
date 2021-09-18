@@ -1,0 +1,10 @@
+.auth--layout {
+  .card {
+    border-radius: 10px;
+    max-width: 420px;
+    padding: 1rem 1.5rem;
+    background-color: darken($gray, 5);
+    padding-top: 2rem;
+    border: none;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
+  <title>Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="dist/css/styles.css" />
+
+</head>
+
+<body>
+  <div class="wrapper auth--layout">
+    <div class="auth--layout--content">
+      <div class="body">
+        <div class="content">
+          <div class="card">
+            <div class="brand">
+              <a href="/" class="brand--link">
+                <img src="src/images/logo.svg" width="120px" alt="" />
+              </a>
+            </div>
+            <form class="form">
+              <div class="step-1 confirm-age">
+                <div class="icon text-center mb-3">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h4 class="text-center mb-5 ">Are you <span>18+</span> old?</h4>
+
+                <div class="btn--group">
+                  <div class="btn btn-secondary">No</div>
+                  <div class="btn btn-primary" onclick="stepOne(this)">Yes</div>
+                </div>
+                <div class="term-pp--link">
+                  <a href="#">Terms</a> and
+                  <a href="#">Privacy Policy.</a>
+                </div>
+              </div>
+              <div class="step-2 register--form  d-none">
+                <div class="form--item">
+                  <label for="firstname">First Name</label>
+                  <input type="text" id="firstname" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form--item">
+                  <label for="firstname">Last Name</label>
+                  <input type="text" id="firstname" class="form-control" placeholder="Last Name" />
+                </div>
+                <div class="form--item">
+                  <label for="mobile">Email</label>
+                  <input type="text" id="mobile" class="form-control" placeholder="Email" />
+                </div>
+                <div class="form--item">
+                  <div onclick="stepTwo(this)" class="btn btn-primary btn-block step--btn1">
+                    Register
+                  </div>
+                </div>
+                <div class="term-pp--link">
+                  By joining, you agree to the<a href="#">Terms</a> and
+                  <a href="#">Privacy Policy.</a>
+                </div>
+                <div class="login--link">
+                  Already have an account? <a href="login.html"> Login</a>
+                </div>
+              </div>
+              <div class="step-3 password--form d-none">
+                <div class="form--item">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" class="form-control" placeholder="Enter Your Password" />
+                </div>
+                <div class="form--item">
+                  <div onclick="stepThree(this)" class="btn btn-primary btn-block">
+                    Submit
+                  </div>
+                </div>
+              </div>
+              <div class="step-4 mobile--form d-none">
+                <div class="form--item">
+                  <label for="mobile">Mobile</label>
+                  <input type="number" id="mobile" class="form-control" placeholder="Mobile Number" />
+                </div>
+                <div class="form--item">
+                  <div class="btn btn-primary btn-block" onclick="stepFour(this)">Submit</div>
+                </div>
+              </div>
+              <div class="step-5 d-none otp--form">
+                <h4>Authenticate Your Account</h4>
+                <p class="info">Please confirm your account by entering the authorization code sent to
+                  <span>***-***-2344</span>
+                </p>
+                <div class="form--item">
+                  <div class="otp--group">
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="one"
+                      onkeyup="clickEvent(this,'two')" />
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="two"
+                      onkeyup="clickEvent(this,'three')" />
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="three"
+                      onkeyup="clickEvent(this,'four')" />
+                    <input type="text" class="otp--input" maxlength="1" autocomplete="off" id="four"
+                      onkeyup="clickEvent(this,'five')" />
+                    <!-- <input type="text" class="otp--input" maxlength="1" id="five" onkeyup="clickEvent(this,'six')" />
+                    <input type="text" class="otp--input" maxlength="1" id="six" /> -->
+                  </div>
+                </div>
+                <div class="form--item">
+                  <div class="resendinfo">
+                    <p>It may take a minute to receive your code.</p>
+                    <p>Haven't received it? <a href="#">Resend a new code</a></p>
+                  </div>
+                </div>
+                <div class="form--item">
+                  <a href="pricing.html" class="btn btn-primary btn-block">Submit</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="auth--layout--banner">
+      <img src="src/images/pic-7.jpg" class="banner--img" alt="" />
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    function clickEvent( first, last ) {
+      if ( first.value.length ) {
+        document.getElementById( last ).focus();
+      }
+    }
+    function stepOne( e ) {
+      $( e ).parents( ".step-1" ).addClass( "d-none" );
+      $( ".register--form" ).removeClass( "d-none" );
+    }
+    function stepTwo( e ) {
+      $( e ).parents( ".step-2" ).addClass( "d-none" );
+      $( ".password--form" ).removeClass( "d-none" );
+    }
+    function stepThree( e ) {
+      $( e ).parents( ".step-3" ).addClass( "d-none" );
+      $( ".mobile--form" ).removeClass( "d-none" );
+    }
+    function stepFour( e ) {
+      $( e ).parents( ".step-4" ).addClass( "d-none" );
+      $( ".otp--form" ).removeClass( "d-none" );
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.brand {
+  &--link {
+    display: flex;
+    align-items: center;
+    @media (max-width: 899px) {
+      padding-top: 0.5rem;
+      img {
+        width: 65px;
+      }
+    }
+  }
+}

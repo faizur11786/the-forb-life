@@ -1,0 +1,58 @@
+.warpper {
+  &--messenger {
+    justify-content: center;
+    .messenger {
+      &--sidebar {
+        max-width: 360px;
+        width: 100%;
+        display: flex;
+        .content {
+          flex: 1 1 auto;
+          display: flex;
+        }
+      }
+      &--main {
+        flex: 1 1 auto;
+        width: 100%;
+        display: flex;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        max-width: 992px;
+      }
+      &--container {
+        background-color: $gray;
+        border-radius: 10px;
+        padding: 0.75rem;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        .messenger {
+          &--header {
+            border-radius: 10px;
+            background-color: lighten($gray, 5);
+            &:hover {
+              background-color: lighten($gray, 8);
+            }
+          }
+          &--body {
+            flex: 1 1 auto;
+            display: flex;
+            padding-right: 0.5rem;
+            .chat--item {
+              max-width: calc(100% - 250px);
+            }
+          }
+          &--header {
+            .user {
+              &--details {
+                li {
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
