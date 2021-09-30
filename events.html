@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
+    <title>The Forbidden Life | Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+</head>
+
+<body>
+    <div class="page">
+        <div class="header--container">
+            <header class="header container">
+                <div class="left">
+                    <div class="brand">
+                        <a href="/" class="brand--link">
+                            <img src="src/images/logo.svg" width="80px" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="menu">
+                        <li class="menu--item">
+                            <a href="#" class="menu--link">
+                                <div class="chat--icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M12 19c.828 0 1.5.672 1.5 1.5S12.828 22 12 22s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-17c3.314 0 6 2.686 6 6 0 2.165-.753 3.29-2.674 4.923C13.399 14.56 13 15.297 13 17h-2c0-2.474.787-3.695 3.031-5.601C15.548 10.11 16 9.434 16 8c0-2.21-1.79-4-4-4S8 5.79 8 8v1H6V8c0-3.314 2.686-6 6-6z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="messenger.html" class="menu--link">
+                                <div class="chat--icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="#" class="menu--link">
+                                <div class="chat--icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M20 18.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                        <div class="dropdown">
+                            <div class="user--avatar" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                                    class="user--avatar--img" alt="" />
+                            </div>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-file-invoice-dollar"></i>Billing</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <div class="warpper container d-flex warpper--search">
+            <div class="sidebar">
+                <div class="events">
+                    <div class="events--header">
+                        <h5>Event details</h5>
+                    </div>
+                    <div class="events--body">
+                        <div class="friends">
+                            <div class="friends--item">
+                                <div class="friends--details">
+                                    <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_1.jpg"
+                                        class="friends--img" alt="">
+                                    <div class="info">
+                                        <h5>Something Will Come</h5>
+                                        <span>Host – Your profile</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form action="" class="form">
+                            <div class="form-item">
+                                <input type="text" class="form-date" placeholder="Event Name">
+                            </div>
+
+                            <div class="form-item">
+                                <div class="form-item-input">
+                                    <label for="date">Start date</label>
+                                    <input type="date" id="date" class="form-date">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="form-item-input">
+                                    <label for="location">Location</label>
+                                    <input type="text" id="location" class="form-date" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="form-item-input">
+                                    <label for="description">Description</label>
+                                    <textarea type="text" class="form-control" id="description"
+                                        placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- <div>
+                            <a href="#">End date and time</a>
+                        </div> -->
+                    </div>
+
+                </div>
+                <div class="copyright">The Forbidden Life © 2021</div>
+            </div>
+            <div class="body flex-fill">
+                <div class="feed--container">
+                    <div class="feed">
+                        <div class="feed--item">
+                            <div class="events--details">
+                                <div class="events--details--header">
+                                    <div>
+                                        <h5>Event details</h5>
+                                    </div>
+                                    <div>
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                                <div class="events--details--body">
+                                    <div class="events--scheduled">
+                                        <div class="scheduled-icon">
+                                            <span></span>
+                                            <h3>1</h3>
+                                        </div>
+                                        <div class="scheduled-time">
+                                            <h6>FRIDAY, 1 OCTOBER 2021 AT 00:45 UTC+05:30</h6>
+                                        </div>
+                                        <div class="scheduled-title">
+                                            <h2>Event name</h2>
+                                        </div>
+                                        <div class="scheduled-location">
+                                            <h6>Location</h6>
+                                        </div>
+                                    </div>
+                                    <div class="events--card">
+                                        <div class="events--card--itme">
+                                            <div class="events--card--header">
+                                                <h5>Details</h5>
+                                            </div>
+                                            <div class="events--card--body">
+                                                <div class="events--card--list">
+                                                    <div class="events--card--icon">
+                                                        <svg viewBox="0 0 24 24" width="24" height="24">
+                                                            <path
+                                                                d="M2 22a8 8 0 1 1 16 0H2zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm7.363 2.233A7.505 7.505 0 0 1 22.983 22H20c0-2.61-1-4.986-2.637-6.767zm-2.023-2.276A7.98 7.98 0 0 0 18 7a7.964 7.964 0 0 0-1.015-3.903A5 5 0 0 1 21 8a4.999 4.999 0 0 1-5.66 4.957z">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="events--card--details">
+                                                        <span>Something Will Come</span>
+                                                        <div class="user--avatar">
+                                                            <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_1.jpg"
+                                                                class="user--avatar--img" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="events--card--list">
+                                                    <div class="events--card--icon">
+                                                        <svg viewBox="0 0 24 24" width="24" height="24">
+                                                            <path
+                                                                d="M2 22a8 8 0 1 1 16 0H2zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm7.363 2.233A7.505 7.505 0 0 1 22.983 22H20c0-2.61-1-4.986-2.637-6.767zm-2.023-2.276A7.98 7.98 0 0 0 18 7a7.964 7.964 0 0 0-1.015-3.903A5 5 0 0 1 21 8a4.999 4.999 0 0 1-5.66 4.957z">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="events--card--details">
+                                                        <span>Group · Members of Hello
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="events--card--itme">
+                                            <div class="events--card--header">
+                                                <h5>Guest list</h5>
+                                                <a href="#">See All</a>
+                                            </div>
+                                            <div class="events--card--body">
+                                                <!-- <div class="events--card--list">
+                                                    <div class="events--card--icon">
+                                                        <svg viewBox="0 0 24 24" width="24" height="24">
+                                                            <path
+                                                                d="M2 22a8 8 0 1 1 16 0H2zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm7.363 2.233A7.505 7.505 0 0 1 22.983 22H20c0-2.61-1-4.986-2.637-6.767zm-2.023-2.276A7.98 7.98 0 0 0 18 7a7.964 7.964 0 0 0-1.015-3.903A5 5 0 0 1 21 8a4.999 4.999 0 0 1-5.66 4.957z">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="events--card--details">
+                                                        <h5>Groups</h5>
+                                                        <div class="user--avatar">
+                                                            <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_1.jpg"
+                                                                class="user--avatar--img" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="sidebar--right">
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $( document ).ready( function () {
+            $( ".close" ).click( function () {
+                $( this ).parents( ".messenger--pupup" ).addClass( "d-none" );
+            } );
+            // $( ".list--item" ).forEach( element => {
+            //   $( element ).click( function () {
+            //     $( ".messenger--pupup" ).removeClass( "d-none" )
+            //   } )
+            // } );
+            $( ".list--item" ).click( function () {
+                $( ".messenger--pupup" ).removeClass( "d-none" )
+            } )
+        } );
+    </script>
+</body>
+
+</html>

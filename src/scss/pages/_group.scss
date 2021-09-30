@@ -1,0 +1,51 @@
+.create__group {
+    padding-bottom: 1rem;
+    // border-bottom: 1px solid $gray;
+}
+.groups {
+    &--header {
+        padding: 1rem 0;
+        border-top: 1px solid $gray;
+    }
+    &--body {
+        .friends {
+            &--item {
+                &::before {
+                    border: none;
+                }
+            }
+        }
+    }
+    &__about {
+        &--item {
+            display: flex;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+        }
+        &--icon {
+            i {
+                color: $red;
+            }
+        }
+        &--details {
+            h6 {
+                font-size: 16px;
+                color: $white;
+            }
+        }
+    }
+    &__about--card {
+        display: flex;
+        gap: 0.75rem;
+        .card {
+            width: 50%;
+            &--header {
+                border-bottom: 1px solid $gray;
+                padding-bottom: 1rem;
+            }
+            .admin {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

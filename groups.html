@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="src/images/favicon.svg" />
+    <title>The Forbidden Life | Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/styles.css" />
+</head>
+
+<body>
+    <div class="page">
+        <div class="header--container">
+            <header class="header container">
+                <div class="left">
+                    <div class="brand">
+                        <a href="/" class="brand--link">
+                            <img src="src/images/logo.svg" width="80px" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <ul class="menu">
+                        <li class="menu--item">
+                            <a href="#" class="menu--link">
+                                <div class="chat--icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M12 19c.828 0 1.5.672 1.5 1.5S12.828 22 12 22s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-17c3.314 0 6 2.686 6 6 0 2.165-.753 3.29-2.674 4.923C13.399 14.56 13 15.297 13 17h-2c0-2.474.787-3.695 3.031-5.601C15.548 10.11 16 9.434 16 8c0-2.21-1.79-4-4-4S8 5.79 8 8v1H6V8c0-3.314 2.686-6 6-6z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="messenger.html" class="menu--link">
+                                <div class="chat--icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM7 10v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu--item">
+                            <a href="#" class="menu--link">
+                                <div class="chat--icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path
+                                            d="M20 18.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+
+                        <div class="dropdown">
+                            <div class="user--avatar" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                                    class="user--avatar--img" alt="" />
+                            </div>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#"><i
+                                            class="fas fa-file-invoice-dollar"></i>Billing</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <div class="warpper container d-flex warpper--search">
+            <div class="sidebar">
+                <div class="content">
+                    <form action="" class="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" />
+                            <span class="input-group-text">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path
+                                        d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </form>
+                    <div class="create__group">
+                        <a href="#" class="btn btn-secondary btn-block">Create New Group</a>
+                    </div>
+                    <div class="groups">
+                        <div class="groups--header">
+                            <h5>Groups you manage</h5>
+                        </div>
+                        <div class="groups--body">
+                            <div class="friends">
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_1.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>Something Will Come</h5>
+                                            </a>
+                                            <ul>
+                                                <li>20k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="groups">
+                        <div class="groups--header">
+                            <h5>Groups you manage</h5>
+                        </div>
+                        <div class="groups--body">
+                            <div class="friends">
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://nmi.edu.af/wp-content/uploads/2017/05/team_1.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>Something Will Come</h5>
+                                            </a>
+                                            <ul>
+                                                <li>20k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="friends--item">
+                                    <div class="friends--details">
+                                        <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-demo-deoctor-5-1-750x750.jpg"
+                                            class="friends--img" alt="">
+                                        <div class="info">
+                                            <a href="#">
+                                                <h5>There is a Title</h5>
+                                            </a>
+                                            <ul>
+                                                <li>30k Member</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">The Forbidden Life © 2021</div>
+            </div>
+            <div class="body flex-fill">
+                <div class="feed--container">
+                    <div class="feed">
+
+                        <div class="feed--item">
+                            <div class="post">
+                                <div class="post--header">
+                                    <div class="user">
+                                        <div class="user--avatar">
+                                            <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-client-3-1.jpg"
+                                                class="user--avatar--img" alt="" />
+                                        </div>
+                                        <div class="user--details">
+                                            <a href=""> Harold Craig</a>
+                                            <ul>
+                                                <li>10 August at 12:30</li>
+                                                <span aria-hidden="true"> · </span>
+                                                <li>
+                                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm6.355-6.048v-.105c0-.922 0-1.343-.652-1.716a7.374 7.374 0 0 0-.645-.325c-.367-.167-.61-.276-.938-.756a12.014 12.014 0 0 1-.116-.172c-.345-.525-.594-.903-1.542-.753-1.865.296-2.003.624-2.085 1.178l-.013.091c-.121.81-.143 1.082.195 1.437 1.265 1.327 2.023 2.284 2.253 2.844.112.273.4 1.1.202 1.918a8.185 8.185 0 0 0 3.151-2.237c.11-.374.19-.84.19-1.404zM12 3.833c-2.317 0-4.41.966-5.896 2.516.177.123.331.296.437.534.204.457.204.928.204 1.345 0 .328 0 .64.105.865.144.308.766.44 1.315.554.197.042.399.084.583.135.506.14.898.595 1.211.96.13.151.323.374.42.43.05-.036.211-.211.29-.498.062-.22.044-.414-.045-.52-.56-.66-.529-1.93-.356-2.399.272-.739 1.122-.684 1.744-.644.232.015.45.03.614.009.622-.078.814-1.025.949-1.21.292-.4 1.186-1.003 1.74-1.375A8.138 8.138 0 0 0 12 3.833z" />
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post--media">
+                                    <div class="post--media--item">
+                                        <img src="src/images/post2.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="post--action">
+                                    <div class="reaction">
+                                        <div class="reaction--item">
+                                            <a href="#">
+                                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                                    <path
+                                                        d="M14.6 8H21a2 2 0 0 1 2 2v2.104a2 2 0 0 1-.15.762l-3.095 7.515a1 1 0 0 1-.925.619H2a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h3.482a1 1 0 0 0 .817-.423L11.752.85a.5.5 0 0 1 .632-.159l1.814.907a2.5 2.5 0 0 1 1.305 2.853L14.6 8zM7 10.588V19h11.16L21 12.104V10h-6.4a2 2 0 0 1-1.938-2.493l.903-3.548a.5.5 0 0 0-.261-.571l-.661-.33-4.71 6.672c-.25.354-.57.644-.933.858zM5 11H3v8h2v-8z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="reaction--item">
+                                            <a href="#">
+                                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                                    <path
+                                                        d="M5.763 17H20V5H4v13.385L5.763 17zm.692 2L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="reaction--item">
+                                            <a href="#">
+                                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                                    <path
+                                                        d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post--comment">
+                                        <div class="user--avatar">
+                                            <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                                                class="user--avatar--img" alt="" />
+                                        </div>
+                                        <form action="" class="comment">
+                                            <input type="text" class="form-control" name="comment"
+                                                placeholder="Reply" />
+                                            <div class="option">
+                                                <div class="option--item">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5-7h2a3 3 0 0 0 6 0h2a5 5 0 0 1-10 0zm1-2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="post--commentList">
+                                        <div class="commentList">
+                                            <div class="commentList--item">
+                                                <div class="user--avatar">
+                                                    <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-client-3-1.jpg"
+                                                        class="user--avatar--img" alt="" />
+                                                </div>
+                                                <div class="commentList--content">
+                                                    <a href="#">Harold Craig</a>
+                                                    <p>I made it before!!!</p>
+                                                    <span>20 m</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed--item">
+                            <div class="post">
+                                <div class="post--header">
+                                    <div class="user">
+                                        <div class="user--avatar">
+                                            <img src="https://dentalia.orionthemes.com/demo-1/wp-content/uploads/2016/10/dentalia-client-3-1.jpg"
+                                                class="user--avatar--img" alt="" />
+                                        </div>
+                                        <div class="user--details">
+                                            <a href=""> Harold Craig</a>
+                                            <ul>
+                                                <li>10 August at 12:30</li>
+                                                <span aria-hidden="true"> · </span>
+                                                <li>
+                                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm6.355-6.048v-.105c0-.922 0-1.343-.652-1.716a7.374 7.374 0 0 0-.645-.325c-.367-.167-.61-.276-.938-.756a12.014 12.014 0 0 1-.116-.172c-.345-.525-.594-.903-1.542-.753-1.865.296-2.003.624-2.085 1.178l-.013.091c-.121.81-.143 1.082.195 1.437 1.265 1.327 2.023 2.284 2.253 2.844.112.273.4 1.1.202 1.918a8.185 8.185 0 0 0 3.151-2.237c.11-.374.19-.84.19-1.404zM12 3.833c-2.317 0-4.41.966-5.896 2.516.177.123.331.296.437.534.204.457.204.928.204 1.345 0 .328 0 .64.105.865.144.308.766.44 1.315.554.197.042.399.084.583.135.506.14.898.595 1.211.96.13.151.323.374.42.43.05-.036.211-.211.29-.498.062-.22.044-.414-.045-.52-.56-.66-.529-1.93-.356-2.399.272-.739 1.122-.684 1.744-.644.232.015.45.03.614.009.622-.078.814-1.025.949-1.21.292-.4 1.186-1.003 1.74-1.375A8.138 8.138 0 0 0 12 3.833z" />
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post--caption">
+                                    <div class="caption caption--short">
+                                        <div class="caption--text">
+                                            <p>
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                elit.
+                                            </p>
+                                        </div>
+                                        <div class="caption--tags">
+                                            <span class="tags--item">
+                                                <a href="#">#this</a>
+                                            </span>
+                                            <span class="tags--item">
+                                                <a href="#">#is</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post--media">
+                                    <div class="post--media--item">
+                                        <img src="src/images/post.jpg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="post--action">
+                                    <div class="reaction">
+                                        <div class="reaction--item active">
+                                            <a href="#">
+                                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                                    <path
+                                                        d="M14.6 8H21a2 2 0 0 1 2 2v2.104a2 2 0 0 1-.15.762l-3.095 7.515a1 1 0 0 1-.925.619H2a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h3.482a1 1 0 0 0 .817-.423L11.752.85a.5.5 0 0 1 .632-.159l1.814.907a2.5 2.5 0 0 1 1.305 2.853L14.6 8zM7 10.588V19h11.16L21 12.104V10h-6.4a2 2 0 0 1-1.938-2.493l.903-3.548a.5.5 0 0 0-.261-.571l-.661-.33-4.71 6.672c-.25.354-.57.644-.933.858zM5 11H3v8h2v-8z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="reaction--item">
+                                            <a href="#">
+                                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                                    <path
+                                                        d="M5.763 17H20V5H4v13.385L5.763 17zm.692 2L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="reaction--item">
+                                            <a href="#">
+                                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                                    <path
+                                                        d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="post--comment">
+                                        <div class="user--avatar">
+                                            <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg"
+                                                class="user--avatar--img" alt="" />
+                                        </div>
+                                        <form action="" class="comment">
+                                            <input type="text" class="form-control" name="comment"
+                                                placeholder="Reply" />
+                                            <div class="option">
+                                                <div class="option--item">
+                                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                                        <path
+                                                            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-5-7h2a3 3 0 0 0 6 0h2a5 5 0 0 1-10 0zm1-2a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="sidebar--right">
+            </div> -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $( document ).ready( function () {
+            $( ".close" ).click( function () {
+                $( this ).parents( ".messenger--pupup" ).addClass( "d-none" );
+            } );
+            // $( ".list--item" ).forEach( element => {
+            //   $( element ).click( function () {
+            //     $( ".messenger--pupup" ).removeClass( "d-none" )
+            //   } )
+            // } );
+            $( ".list--item" ).click( function () {
+                $( ".messenger--pupup" ).removeClass( "d-none" )
+            } )
+        } );
+    </script>
+</body>
+
+</html>
